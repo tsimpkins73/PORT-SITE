@@ -76,7 +76,7 @@ section#BioSection{
      display: block;
         }
 
-a#profile-link, a#portfolioLinks{
+input[type="submit"], a#profile-link, a#portfolioLinks{
      background-color: rgb(151, 70, 0);
      color: #FFFFFF;
      padding: 25px;
@@ -375,13 +375,13 @@ fieldset{
 
 
  
-    #portfolioLinks{
+   input[type="submit"], #portfolioLinks{
      width: 242px; 
      margin: 3%;  
      font-size: 16px;
     }
 
-    a#profile-link, a#portfolioLinks{
+    input[type="submit"], a#profile-link, a#portfolioLinks{
         color: white;
         background-color: rgb(151, 70, 0);
         padding: 3%;
