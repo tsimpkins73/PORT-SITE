@@ -1,257 +1,408 @@
-body {
-    margin: 0;
-    padding: 0;
-  font-size: 12pt;
-   background: url(http://3.bp.blogspot.com/-tJU0LDSKMIE/UtlWV9EwhBI/AAAAAAAAF3Y/WTNhbcVjZeI/s1600/orange-web-background.jpg) repeat-x fixed;;
-  background-size: cover;
-  background-position: absolute;
-
- }
- hr{
-    width: 60%;
- }
- footer{
-    height: 30px;
-    background: teal;
-    text-align: center;
-    font-family: Helvetica;
-    padding-bottom: 5%;
+@media only screen and (max-width: 900px) and (min-width: 500px){
+     section#Projects #PortPiece1, section#WorkExperience #PortPiece1
+     {
+          margin: auto;
+          padding: 2%;
+          font-size: 15pt; 
+          font-family: helvetica;
+          width: 100%;
+          height: 5%;
+          display: inline-block;
      }
- 
- #Container 
-{ 
+     body button#ProjectsButton,body button#WorkExperienceButton{
+          display: none;
+    }
+    body section#Projects,  body section#WorkExperience{
+     width:auto;
      margin: auto;
-     padding: 0;
-     position: relative;
-     float: center;
-     width: 100%;
+     margin-top: 0;
      height: auto;
-     z-index:2;
-} 
+     display: block;
+        
+    }
+    body{
+         font-size: 200em
+    }
+  }
 
- #ContentContainer 
-{ 
+@media only screen and (min-width: 900px) {
+body section#Projects{
+     width:auto;
      margin: auto;
-     padding: 0;
-     position: relative;
-     float: center;
-     width: 90%;
+     margin-top: 0;
      height: auto;
-     z-index:2;
-} 
-
- #Header 
-{ 
+     display: block;
+        
+    }  
+    body div#Port{
+     width:90%;
      margin: auto;
-     padding: 1%;
-     float: center; 
-     position: relative;
-     background-image: url(https://texturex.com/wp-content/uploads/2018/03/TextureX-water-splash-bubbles-stock-blue-black-dark-image-city-Texture-1.jpg); 
-     background-position: top;
-     background-repeat: no-repeat;
-     background-size: 100%;
+     margin-left: 0;
+     margin-top: 0;
+     height: auto;
+     display: block;
+        
+    }  
     
-     height: 75px;
-     z-index:2;
-}
 
-#SocialSidebar {
-    margin: auto;
-    border-radius: 20px;
-    padding: 1%;
-    top: 80%;
-    display: block;
-    position: sticky;
-   opacity: 0.4;
-  background: linear-gradient(180deg, #000000, #D5D5D5);
-     width: auto;
-     height: 10%;
-    float: left;
-   z-index: 8;
-   overflow: auto; 
-}
 
-#SocialSidebar:hover {
-   opacity: 1.0;
-   filter: alpha(opacity=100);
-   transform: scale(1.5) translate(20%,0);
-   box-shadow: 3px 3px 10px grey;
-}
-
-.sidebar
-{
-     display: inline;
-}
-#socialbartext
-{
-     color: #FFFFFF;
-     text-decoration: none;
-     line-height: 1.5;
-     list-style-type: none;
+    body section#WorkExperience{
+     width:auto;
      margin: auto;
-     position: relative;
-     font-family: Helvetica;
-     vertical-align: center;
-     font-size: relative;
-}
+     margin-top: 0;
+     height: auto;
+     display: block;
+                    }   
 
-#navbartext:hover {
-    background-color: #4CAF50;
-    color: white;
-}
- #navbar
-{ 
-     margin: 0 0 10px 0;
-     padding: 1%;
-     position: sticky;
-     top: 0;
-     background-color: teal;
-     height: 20px;
-     z-index: 6;
-     text-align: center;
-     box-shadow: 3px 3px 10px grey;
-}
-
- #navbartext, a
+    section#Projects #PortPiece1
 {
-     color: #FFFFFF;
-     text-decoration: none;
      margin: auto;
-     position: relative;
-     font-family: Helvetica;
-     font-size: 1em;
      padding: 2%;
-}
-
- #HeaderText
-{
-     color: #FFFFFF;
-     margin: auto;
-     position: relative;
-     font-family: Helvetica;
-     font-size: 2.5em;
-}
-
- #Background 
-{ 
-     left: 0px; 
-     top: 0px; 
-     position: top-center; 
-     width: 100%;
-     height: 100%;
-     z-index:1;
-} 
-
- #BioSection 
-{ 
-      margin: auto;
-     align-content: center;
-     padding:10px;
-     position: relative;
-          background-color: #FFFFFF;
-     vertical-align: middle;
-     text-align: center;
-     align-self: center;
-     z-index:2;
-     display: table;
-} 
-
- #PortfolioSection 
-{ 
-     margin: auto;
-     padding: 1%;
-     position: relative;
-background: linear-gradient(180deg, #D4D4D4, white);
-     height: auto;
-     z-index:3;
-} 
-
- #Section3 
-{ 
-     margin: auto;
-     padding: 1%;
-     position: relative; 
-     background: linear-gradient(180deg, gray, white); 
-     height: auto;
-     z-index:4;
-} 
-
- #Section4 
-{ 
-     margin: auto;
-     padding: 1%;
-     position: relative;
-     background: linear-gradient(180deg, teal, white); 
-    height: auto;
-     z-index:5;
-} 
-
- #Section5 
-{ 
-     margin: auto;
-     padding: 1%;
-     position: relative;
-     background-color: white;
- 
-     height: auto;
-     z-index:6;
-} 
-
- #Section6 
-{ 
-     margin: auto;
-     padding: 1%;
-     position: relative;
-     background-color: red; 
-     
-     height: auto;
-     z-index:7;
-} 
-
-
-
-#PortPiece1
-{
-     margin: 0px auto;
-     padding: 1%;
      font-size: 9pt; 
      font-family: helvetica;
-     position: relative;
+     width: 28%;
+     height: 5%;
+     display: inline-block;
+   
+}
+
+section#BioSection{
+     background-color:rgba(20, 203, 211, 0.4);
+     width:auto;
+     margin: auto;
+     margin-top: 0;
+     height: auto;
+     padding: 10%;
+     display: block;
+        }
+
+a#profile-link, a#portfolioLinks{
+     background-color: rgb(151, 70, 0);
+     color: #FFFFFF;
+     padding: 25px;
+     margin: 2%;
+     display: inline-block;
+     font-size: 100%;
+     height: 20px;
+     width: auto;
+ }
+
+section#WorkExperience #PortPiece1
+{
+     margin: 0px 1%;
+     padding: 2%;
+     font-size: 10pt; 
+     font-family: helvetica;
      width: 25%;
      height: 5%;
-
-     display: inline-block; 
-
-}
-h2
-{
-	font-family: helvetica;
+     display: inline-block;
 }
 
-#AboutMeImage
-{
-	margin: 10px;
-     	padding: 10px;
-	position: relative;
-     
-	     max-width: 90%;
-          max-height: 90%;
-     display: table-cell;
-     vertical-align: middle; 
+body button#ProjectsButton,body button#WorkExperienceButton{
+        display: none;
+  }
+ 
+  #AboutMeImage
+  {
+     margin: auto;
+     padding: 10px;
+     max-width: 40%;
+     max-height: 40%;
+     display: inline-block;
+      
+  }
+  #AboutMeText
+  {
+     margin: auto;
+     margin-right: 3%;
+     padding: 10px;
+     max-width: 40%;
+     max-height: 40%;
+     display: inline;
+      
+  }
+
+  nav#navbar{ 
+     width:auto;
+     height: 2%;
+     text-align: center;
+     box-shadow: 3px 3px 10px grey;
+     z-index: 10;    
+     }
+
+     nav #navbartext, #footertext{
+          font-size: 1em;
+          padding: 1%;
+          text-align: center;
+     }
+
+
+     section#Contact{
+          background-color:rgba(138, 249, 255, 0.4);
+          width:auto;
+          margin: auto;
+          margin-top: 0;
+          height: auto;
+          padding: 5%;
+          display: block;
+             }
+
+}
+ 
+
+/* MEDIA QUERY ABOVE */
+
+/* CSS BELOW */
+
+/* * {
+     outline: 1px solid red;
+ } */
+
+p{
+     line-height: 1.2;
+
 }
 
-#AboutMeText
+#footertext{
+     font-size: 1em;
+     padding: 1%;
+     text-align: center;
+}
+
+#HeaderText{
+     text-shadow: 2px 2px 5px black;
+}
+
+  #navbar{ 
+    margin: 0;
+    width: auto;
+    padding: 2%;
+    position: sticky;
+    top: 0;
+    background-color:rgb(0, 87, 91);
+    height: 5vh;
+    text-align: center;
+    box-shadow: 3px 3px 10px grey;
+    z-index: 10;    
+    display: block;
+    font-size: .6em;
+        }    
+
+    #navbartext{
+     color: #FFFFFF;
+     text-decoration: none;
+     margin: auto;
+     position: relative;
+     font-family: Helvetica;
+     font-weight: lighter;
+     font-size: auto;
+     padding: 1%;
+  }
+
+  #footertext{
+     color: black;
+     text-decoration: none;
+     margin: auto;
+     position: relative;
+     font-family: Helvetica;
+     font-weight: lighter;
+     font-size: auto;
+     padding: 1%;
+  } 
+
+
+#navbartext{
+     text-align: left;
+}
+
+nav a{
+     color: white;
+     text-decoration: none;
+     font-family: Helvetica;
+     font-size: 180%;
+     border-radius: 2%;
+}
+
+
+body{
+   font-family: Helvetica;
+   margin: 0;
+   padding: 0;
+   font-size: 16px;
+ }
+
+.welcome-section{
+    margin: 0;
+    padding: 1%;
+    background-image: url(https://images.pexels.com/photos/249798/pexels-photo-249798.png);
+    background-size: cover;
+    background-color: rgba(20, 203, 211, 0.9);
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 30vh;
+    text-align: center;
+    font-size: 1.5em;
+    color:  rgb(255, 175, 106);
+}
+
+.workResp {
+     text-align: left;
+}
+li{
+     text-align: left;
+
+}
+
+
+#BioSection{
+    background-color:rgba(20, 203, 211, 0.4);
+    margin: 0;
+    margin-top: 0;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: auto;
+    padding: 10%;
+    
+       }
+
+#AboutMeImage{
+     margin: auto;
+     width: 75%;
+     display: inline-block;
+     justify-content: center;
+     font-size: .75em;
+      }
+
+.myPic{
+     border:2px solid white;
+     width: 75%;
+     max-height:40%;
+}
+
+img{
+     border:2px solid white;
+}
+      
+#AboutMeText{
+     margin: auto;
+     margin-left: 0;
+     margin-top:0;
+     width: 85%;
+     display: inline-block;
+     text-overflow: clip;
+     font-size: 1em;
+      }
+      
+
+    #Contact{
+        background-color:white;
+        width: auto;
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        padding: 1%;
+        display: block;
+        text-align: center;
+    }
+
+    button#ProjectsButton, button#WorkExperienceButton{
+     background-color:rgb(0, 87, 91);
+     width: 100vw;
+     box-sizing: 100%;
+     margin: auto;
+     margin-top: 0;
+     height: 3%;
+     padding: 3%;
+     display: block;
+     text-align: center;
+     align-content: center;
+     color: white;
+     font-size: 1.5em;
+     }
+ 
+ #Projects{
+     background-color:rgb(0, 87, 91);
+     width: auto;
+     margin: auto;
+     margin-top: 0;
+     height: 3%;
+     padding: 3%;
+     display:none;
+     text-align: center;
+     justify-content: center;
+     color: white;
+     font-size: 1.5em;
+ 
+ }    
+ 
+ #WorkExperience{
+      background-color:rgba(247, 114, 0);
+     width: auto;
+     box-sizing: 100%;
+     margin: auto;
+     margin-top: 0;
+     height: 3%;
+     padding: 3%;
+     display:none;
+     text-align: center;
+     align-content: center;
+     color: white;
+     font-size: 1.5em;
+ 
+ }    
+
+
+#ContactForm{
+    background-color:white;
+    margin: auto;
+    margin-top: 0;
+    height: auto;
+    padding: 3%;
+    display: block;
+    align-content: center;
+    text-align: left;
+    font-size: .8em;
+    }
+#ContactForm textarea{
+    width: 98%;
+}
+
+fieldset{
+     border: none;
+}
+
+
+ 
+    #portfolioLinks{
+     width: 242px; 
+     margin: 3%;  
+     font-size: 16px;
+    }
+
+    a#profile-link, a#portfolioLinks{
+        color: white;
+        background-color: rgb(151, 70, 0);
+        padding: 3%;
+        display: inline-block;
+        box-shadow: 1px 1px 2px black;
+    }
+
+   
+
+    #PortPiece1
 {
      margin: 0px auto;
-     padding: 2px;
-	position: relative;
-    
-	font-size: 1em; 
+     padding: 2%;
+     font-size: 10pt; 
      font-family: helvetica;
-	display: table-cell;
-     vertical-align: middle;
-     align-self: center;
+     width: auto;
+     height: 5%;
+     display: block;
+     }
 
-}
-
-
+     h2.contactLinks a{
+          text-decoration: none;
+          color: black;
+            }
