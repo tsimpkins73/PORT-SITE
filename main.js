@@ -16,19 +16,8 @@ function projectsReveal(){
         })
         };
 
-        function contactSubmission(){
-            $(document).on('click', 'input#submit', function (event) {
-                event.preventDefault();
-                console.log('Contact received');
-                $('#ContactForm').attr('action',
-                'mailto:t73designs@yahoo.com?subject=Portfolio Message' +
-                $('#firstName').val() + '&body=' + $('#lastName').val() + '&body=' + $('#company').val() + '&body=' + $('#message').val() + '&body=');
- $('#ContactForm').submit();
-            })
-            };
-    
+           
 
 
     $(projectsReveal);
     $(experienceReveal);
-    $(contactSubmission);

@@ -23,6 +23,12 @@
     body{
          font-size: 200em
     }
+
+    nav #navbartext, #footertext{
+     font-size: 15pt;
+     padding: 1%;
+     text-align: center;
+}
   }
 
 @media only screen and (min-width: 900px) {
@@ -77,7 +83,7 @@ section#BioSection{
         }
 
 input[type="submit"], a#profile-link, a#portfolioLinks{
-     background-color: rgb(151, 70, 0);
+     background-color: rgb(247, 114, 0);
      color: #FFFFFF;
      padding: 25px;
      margin: 2%;
@@ -131,7 +137,7 @@ body button#ProjectsButton,body button#WorkExperienceButton{
      }
 
      nav #navbartext, #footertext{
-          font-size: 1em;
+          font-size: 15pt;
           padding: 1%;
           text-align: center;
      }
@@ -161,6 +167,13 @@ body button#ProjectsButton,body button#WorkExperienceButton{
 p{
      line-height: 1.2;
 
+}
+
+label{
+     font-family: helvetica;
+     text-align: left;
+     padding: 0 2% 2% 0;
+width: 30%;
 }
 
 #footertext{
@@ -213,14 +226,13 @@ p{
 
 #navbartext{
      text-align: left;
+     font-size: 10pt;
 }
 
 nav a{
      color: white;
      text-decoration: none;
      font-family: Helvetica;
-     font-size: 180%;
-     border-radius: 2%;
 }
 
 
@@ -256,7 +268,7 @@ li{
 
 
 #BioSection{
-    background-color:rgba(20, 203, 211, 0.4);
+    background-color:rgb(124, 242, 248);
     margin: 0;
     margin-top: 0;
     background-size: cover;
@@ -353,9 +365,11 @@ img{
  
  }    
 
-
+#Contact{
+     background-color:rgb(124, 242, 248);
+}
 #ContactForm{
-    background-color:white;
+   
     margin: auto;
     margin-top: 0;
     height: auto;
@@ -371,6 +385,10 @@ img{
 
 fieldset{
      border: none;
+     margin-left: 0;
+     width: auto;
+     padding-left: 0;
+ 
 }
 
 
@@ -382,13 +400,16 @@ fieldset{
     }
 
     input[type="submit"], a#profile-link, a#portfolioLinks{
+     text-decoration: none;
         color: white;
-        background-color: rgb(151, 70, 0);
+        background-color: rgb(247, 114, 0);
         padding: 3%;
         display: inline-block;
         box-shadow: 1px 1px 2px black;
     }
-
+    input[type="text"]{
+         width: 100%;
+    }
    
 
     #PortPiece1
