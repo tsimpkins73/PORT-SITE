@@ -9,7 +9,7 @@
           height: 5%;
           display: inline-block;
      }
-     body button#ProjectsButton,body button#WorkExperienceButton{
+     body button#ProjectsButton,body button#WorkExperienceButton, body button#ProjectsCollapseButton, body button#WorkExperienceCollapseButton{
           display: none;
     }
     body section#Projects,  body section#WorkExperience{
@@ -104,7 +104,7 @@ section#WorkExperience #PortPiece1
      display: inline-block;
 }
 
-body button#ProjectsButton,body button#WorkExperienceButton{
+body button#ProjectsButton,body button#WorkExperienceButton, body button#ProjectsCollapseButton, body button#WorkExperienceCollapseButton{
         display: none;
   }
  
@@ -334,6 +334,35 @@ img{
      font-size: 1.5em;
      }
  
+     button#WorkExperienceCollapseButton{
+          background-color:rgb(0, 87, 91);
+          width: 100%;
+          margin: auto;
+          margin-top: 0;
+          height: 3%;
+          padding: 3%;
+          display: block;
+          text-align: center;
+          align-content: center;
+          color: white;
+          font-size: 1em;
+          }
+
+          button#ProjectsCollapseButton{
+               background-color:rgb(247, 114, 0);
+               width: 100%;
+               margin: auto;
+               margin-top: 0;
+               height: 3%;
+               padding: 3%;
+               display: block;
+               text-align: center;
+               align-content: center;
+               color: white;
+               font-size: 1em;
+               }
+
+
  #Projects{
      background-color:rgb(0, 87, 91);
      width: auto;
