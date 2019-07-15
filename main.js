@@ -61,9 +61,8 @@ $(document).ready(function () {
 });
 
 
-
 $(projectsReveal);
 $(experienceReveal);
 $(projectsCollapse);
 $(experienceCollapse);
-$(mobileOverrides);
+

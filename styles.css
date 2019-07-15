@@ -1,160 +1,174 @@
-@media only screen and (max-width: 900px) and (min-width: 500px){
-     section#Projects #PortPiece1, section#WorkExperience #PortPiece1
-     {
-          margin: auto;
-          padding: 2%;
-          font-size: 15pt; 
-          font-family: helvetica;
-          width: 100%;
-          height: 5%;
-          display: inline-block;
-     }
-     body button#ProjectsButton,body button#WorkExperienceButton, body button#ProjectsCollapseButton, body button#WorkExperienceCollapseButton{
-          display: none;
-    }
-    body section#Projects,  body section#WorkExperience{
-     width:auto;
-     margin: auto;
-     margin-top: 0;
-     height: auto;
-     display: block;
-        
-    }
-    body{
-         font-size: 200em
+@media only screen and (max-width: 900px) and (min-width: 500px) {
+
+    section#Projects #PortPiece1,
+    section#WorkExperience #PortPiece1 {
+        margin: auto;
+        padding: 2%;
+        font-size: 15pt;
+        font-family: helvetica;
+        width: 100%;
+        height: 5%;
+        display: inline-block;
     }
 
-    nav #navbartext, #footertext{
-     font-size: 15pt;
-     padding: 1%;
-     text-align: center;
+    body button#ProjectsButton,
+    body button#WorkExperienceButton,
+    body button#ProjectsCollapseButton,
+    body button#WorkExperienceCollapseButton {
+        display: none;
+    }
+
+    body section#Projects,
+    body section#WorkExperience {
+        width: auto;
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        display: block;
+
+    }
+
+    body {
+        font-size: 200em
+    }
+
+    nav #navbartext,
+    #footertext {
+        font-size: 15pt;
+        padding: 1%;
+        text-align: center;
+    }
 }
-  }
 
 @media only screen and (min-width: 900px) {
-body section#Projects{
-     width:auto;
-     margin: auto;
-     margin-top: 0;
-     height: auto;
-     display: block;
-        
-    }  
-    body div#Port{
-     width:90%;
-     margin: auto;
-     margin-left: 0;
-     margin-top: 0;
-     height: auto;
-     display: block;
-        
-    }  
-    
+    body section#Projects {
+        width: auto;
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        display: block;
+
+    }
+
+    body div#Port {
+        width: 90%;
+        margin: auto;
+        margin-left: 0;
+        margin-top: 0;
+        height: auto;
+        display: block;
+
+    }
 
 
-    body section#WorkExperience{
-     width:auto;
-     margin: auto;
-     margin-top: 0;
-     height: auto;
-     display: block;
-                    }   
 
-    section#Projects #PortPiece1
-{
-     margin: auto;
-     padding: 2%;
-     font-size: 9pt; 
-     font-family: helvetica;
-     width: 28%;
-     height: 5%;
-     display: inline-block;
-   
-}
+    body section#WorkExperience {
+        width: auto;
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        display: block;
+    }
 
-section#BioSection{
-     background-color:rgba(20, 203, 211, 0.4);
-     width:auto;
-     margin: auto;
-     margin-top: 0;
-     height: auto;
-     padding: 10%;
-     display: block;
-        }
+    section#Projects #PortPiece1 {
+        margin: auto;
+        padding: 2%;
+        font-size: 9pt;
+        font-family: helvetica;
+        width: 28%;
+        height: 5%;
+        display: inline-block;
 
-input[type="submit"], a#profile-link, a#portfolioLinks{
-     background-color: rgb(247, 114, 0);
-     color: #FFFFFF;
-     padding: 25px;
-     margin: 2%;
-     display: inline-block;
-     font-size: 100%;
-     height: 20px;
-     width: auto;
- }
+    }
 
-section#WorkExperience #PortPiece1
-{
-     margin: 0px 1%;
-     padding: 2%;
-     font-size: 10pt; 
-     font-family: helvetica;
-     width: 25%;
-     height: 5%;
-     display: inline-block;
-}
+    section#BioSection {
+        background-color: rgba(20, 203, 211, 0.4);
+        width: auto;
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        padding: 10%;
+        display: block;
+    }
 
-body button#ProjectsButton,body button#WorkExperienceButton, body button#ProjectsCollapseButton, body button#WorkExperienceCollapseButton{
+    input[type="submit"],
+    a#profile-link,
+    a#portfolioLinks {
+        background-color: rgb(247, 114, 0);
+        color: #FFFFFF;
+        padding: 25px;
+        margin: 2%;
+        display: inline-block;
+        font-size: 100%;
+        height: 20px;
+        width: auto;
+    }
+
+    section#WorkExperience #PortPiece1 {
+        margin: 0px 1%;
+        padding: 2%;
+        font-size: 10pt;
+        font-family: helvetica;
+        width: 25%;
+        height: 5%;
+        display: inline-block;
+    }
+
+    body button#ProjectsButton,
+    body button#WorkExperienceButton,
+    body button#ProjectsCollapseButton,
+    body button#WorkExperienceCollapseButton {
         display: none;
-  }
- 
-  #AboutMeImage
-  {
-     margin: auto;
-     padding: 10px;
-     max-width: 40%;
-     max-height: 40%;
-     display: inline-block;
-      
-  }
-  #AboutMeText
-  {
-     margin: auto;
-     margin-right: 3%;
-     padding: 10px;
-     max-width: 40%;
-     max-height: 40%;
-     display: inline;
-      
-  }
+    }
 
-  nav#navbar{ 
-     width:auto;
-     height: 2%;
-     text-align: center;
-     box-shadow: 3px 3px 10px grey;
-     z-index: 10;    
-     }
+    #AboutMeImage {
+        margin: auto;
+        padding: 10px;
+        max-width: 40%;
+        max-height: 40%;
+        display: inline-block;
 
-     nav #navbartext, #footertext{
-          font-size: 15pt;
-          padding: 1%;
-          text-align: center;
-     }
+    }
+
+    #AboutMeText {
+        margin: auto;
+        margin-right: 3%;
+        padding: 10px;
+        max-width: 40%;
+        max-height: 40%;
+        display: inline;
+        font-size: 1em;
+
+    }
+
+    nav#navbar {
+        width: auto;
+        height: 2%;
+        text-align: center;
+        box-shadow: 3px 3px 10px grey;
+        z-index: 10;
+    }
+
+    nav #navbartext,
+    #footertext {
+        font-size: 15pt;
+        padding: 1%;
+        text-align: center;
+    }
 
 
-     section#Contact{
-          background-color:rgba(138, 249, 255, 0.4);
-          width:auto;
-          margin: auto;
-          margin-top: 0;
-          height: auto;
-          padding: 5%;
-          display: block;
-             }
+    section#Contact {
+        background-color: rgba(138, 249, 255, 0.4);
+        width: auto;
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        padding: 5%;
+        display: block;
+    }
 
 }
- 
+
 
 /* MEDIA QUERY ABOVE */
 
@@ -164,241 +178,249 @@ body button#ProjectsButton,body button#WorkExperienceButton, body button#Project
      outline: 1px solid red;
  } */
 
-p{
-     line-height: 1.2;
+p {
+    line-height: 1.2;
 
 }
 
-label{
-     font-family: helvetica;
-     text-align: left;
-     padding: 0 2% 2% 0;
-width: 30%;
+ul{
+     list-style: none;
+     display: flex;
+     padding: 0;
 }
 
-#footertext{
-     font-size: 1em;
-     padding: 1%;
-     text-align: center;
+
+label {
+    font-family: helvetica;
+    text-align: left;
+    padding: 0 2% 2% 0;
+    width: 30%;
 }
 
-#HeaderText{
-     text-shadow: 2px 2px 5px black;
+#footertext {
+    font-size: 1em;
+    padding: 1%;
+    text-align: center;
 }
 
-  #navbar{ 
+#HeaderText {
+    text-shadow: 2px 2px 5px black;
+    margin-top: 13%;
+}
+
+#navbar {
     margin: 0;
     width: auto;
     padding: 2%;
     position: sticky;
     top: 0;
-    background-color:rgb(0, 87, 91);
+    background-color: rgb(0, 87, 91);
     height: 5vh;
     text-align: center;
     box-shadow: 3px 3px 10px grey;
-    z-index: 10;    
+    z-index: 10;
     display: block;
     font-size: .6em;
-        }    
-
-    #navbartext{
-     color: #FFFFFF;
-     text-decoration: none;
-     margin: auto;
-     position: relative;
-     font-family: Helvetica;
-     font-weight: lighter;
-     font-size: auto;
-     padding: 1%;
-  }
-
-  #footertext{
-     color: black;
-     text-decoration: none;
-     margin: auto;
-     position: relative;
-     font-family: Helvetica;
-     font-weight: lighter;
-     font-size: auto;
-     padding: 1%;
-  } 
-
-
-#navbartext{
-     text-align: left;
-     font-size: 10pt;
 }
 
-nav a{
-     color: white;
-     text-decoration: none;
-     font-family: Helvetica;
+#navbartext {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: auto;
+    position: relative;
+    font-family: Helvetica;
+    font-weight: lighter;
+    padding: 1%;
+    text-align: left;
+    font-size: 16pt;
 }
 
 
-body{
-   font-family: Helvetica;
-   margin: 0;
-   padding: 0;
-   font-size: 16px;
- }
+#footertext {
+    color: black;
+    text-decoration: none;
+    margin: auto;
+    position: relative;
+    font-family: Helvetica;
+    font-weight: lighter;
+    font-size: auto;
+    padding: 1%;
+}
 
-.welcome-section{
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+
+body {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.welcome-section {
     margin: 0;
     padding: 1%;
     background-image: url(https://images.pexels.com/photos/249798/pexels-photo-249798.png);
     background-size: cover;
     background-color: rgba(20, 203, 211, 0.9);
     background-blend-mode: color-dodge;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     height: 30vh;
     text-align: center;
     font-size: 1.5em;
-    color:  rgb(255, 175, 106);
+    color: rgb(255, 175, 106);
 }
 
 .workResp {
-     text-align: left;
-}
-li{
-     text-align: left;
-
+    text-align: left;
 }
 
+li {
+    text-align: left;
 
-#BioSection{
-    background-color:rgb(124, 242, 248);
+}
+
+
+#BioSection {
+    background-color: rgb(124, 242, 248);
     margin: 0;
     margin-top: 0;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     height: auto;
     padding: 10%;
-    
-       }
 
-#AboutMeImage{
-     margin: auto;
-     width: 75%;
-     display: inline-block;
-     justify-content: center;
-     font-size: .75em;
-      }
-
-.myPic{
-     border:2px solid white;
-     width: 75%;
-     max-height:40%;
 }
 
-img{
-     border:2px solid white;
+#AboutMeImage {
+    margin: auto;
+    width: 75%;
+    display: inline-block;
+    justify-content: center;
+    font-size: .75em;
 }
-      
-#AboutMeText{
-     margin: auto;
-     margin-left: 0;
-     margin-top:0;
-     width: 85%;
-     display: inline-block;
-     text-overflow: clip;
-     font-size: 1em;
-      }
-      
 
-    #Contact{
-        background-color:white;
-        width: auto;
-        margin: auto;
-        margin-top: 0;
-        height: auto;
-        padding: 1%;
-        display: block;
-        text-align: center;
-    }
-
-    button#ProjectsButton, button#WorkExperienceButton{
-     background-color:rgb(0, 87, 91);
-     width: 100vw;
-     box-sizing: 100%;
-     margin: auto;
-     margin-top: 0;
-     height: 3%;
-     padding: 3%;
-     display: block;
-     text-align: center;
-     align-content: center;
-     color: white;
-     font-size: 1.5em;
-     }
- 
-     button#WorkExperienceCollapseButton{
-          background-color:rgb(0, 87, 91);
-          width: 100%;
-          margin: auto;
-          margin-top: 0;
-          height: 3%;
-          padding: 3%;
-          display: block;
-          text-align: center;
-          align-content: center;
-          color: white;
-          font-size: 1em;
-          }
-
-          button#ProjectsCollapseButton{
-               background-color:rgb(247, 114, 0);
-               width: 100%;
-               margin: auto;
-               margin-top: 0;
-               height: 3%;
-               padding: 3%;
-               display: block;
-               text-align: center;
-               align-content: center;
-               color: white;
-               font-size: 1em;
-               }
-
-
- #Projects{
-     background-color:rgb(0, 87, 91);
-     width: auto;
-     margin: auto;
-     margin-top: 0;
-     height: 3%;
-     padding: 3%;
-     display:none;
-     text-align: center;
-     justify-content: center;
-     color: white;
-     font-size: 1.5em;
- 
- }    
- 
- #WorkExperience{
-      background-color:rgba(247, 114, 0);
-     width: auto;
-     box-sizing: 100%;
-     margin: auto;
-     margin-top: 0;
-     height: 3%;
-     padding: 3%;
-     display:none;
-     text-align: center;
-     align-content: center;
-     color: white;
-     font-size: 1.5em;
- 
- }    
-
-#Contact{
-     background-color:rgb(124, 242, 248);
+.myPic {
+    border: 2px solid white;
+    width: 75%;
+    max-height: 40%;
 }
-#ContactForm{
-   
+
+img {
+    border: 2px solid white;
+}
+
+#AboutMeText {
+    margin: auto;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    display: inline-block;
+    text-overflow: clip;
+    font-size: 1.5em;
+}
+
+
+#Contact {
+    background-color: white;
+    width: auto;
+    margin: auto;
+    margin-top: 0;
+    height: auto;
+    padding: 1%;
+    display: block;
+    text-align: center;
+}
+
+button#ProjectsButton,
+button#WorkExperienceButton {
+    background-color: rgb(0, 87, 91);
+    width: 100vw;
+    box-sizing: 100%;
+    margin: auto;
+    margin-top: 0;
+    height: 3%;
+    padding: 3%;
+    display: none;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+button#WorkExperienceCollapseButton {
+    background-color: rgb(0, 87, 91);
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    height: 3%;
+    padding: 3%;
+    display: block;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+button#ProjectsCollapseButton {
+    background-color: rgb(247, 114, 0);
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    height: 3%;
+    padding: 3%;
+    display: block;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 1em;
+}
+
+button {
+    border: 0;
+}
+
+
+#Projects {
+    background-color: rgb(0, 87, 91);
+    width: auto;
+    margin: auto;
+    margin-top: 0;
+    height: 3%;
+    padding: 3%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+#WorkExperience {
+    background-color: rgba(247, 114, 0);
+    width: auto;
+    box-sizing: 100%;
+    margin: auto;
+    margin-top: 0;
+    height: 3%;
+    padding: 3%;
+    display: block;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 1.5em;
+
+}
+
+
+#ContactForm {
+
     margin: auto;
     margin-top: 0;
     height: auto;
@@ -406,53 +428,59 @@ img{
     display: block;
     align-content: center;
     text-align: left;
-    font-size: .8em;
-    }
-#ContactForm textarea{
+    font-size: 1.5em;
+}
+
+#ContactForm textarea {
     width: 98%;
 }
 
-fieldset{
-     border: none;
-     margin-left: 0;
-     width: auto;
-     padding-left: 0;
- 
+fieldset {
+    border: none;
+    margin-left: 0;
+    width: auto;
+    padding-left: 0;
+
 }
 
 
- 
-   input[type="submit"], #portfolioLinks{
-     width: 242px; 
-     margin: 3%;  
-     font-size: 16px;
-    }
 
-    input[type="submit"], a#profile-link, a#portfolioLinks{
-     text-decoration: none;
-        color: white;
-        background-color: rgb(247, 114, 0);
-        padding: 3%;
-        display: inline-block;
-        box-shadow: 1px 1px 2px black;
-    }
-    input[type="text"]{
-         width: 100%;
-    }
-   
+input[type="submit"],
+#portfolioLinks {
+    width: 242px;
+    margin: 3%;
+    font-size: 16px;
+}
 
-    #PortPiece1
-{
-     margin: 0px auto;
-     padding: 2%;
-     font-size: 10pt; 
-     font-family: helvetica;
-     width: auto;
-     height: 5%;
-     display: block;
-     }
+input[type="submit"],
+a#profile-link,
+a#portfolioLinks {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(247, 114, 0);
+    padding: 3% 10%;
+    display: inline-block;
+    box-shadow: 1px 1px 2px black;
+    font-size: 16pt;
+}
 
-     h2.contactLinks a{
-          text-decoration: none;
-          color: black;
-            }
+input[type="text"] {
+    width: 100%;
+    height: 40px;
+}
+
+
+#PortPiece1 {
+    margin: 0px auto;
+    padding: 2%;
+    font-size: 16pt;
+    font-family: helvetica;
+    width: auto;
+    height: 5%;
+    display: block;
+}
+
+h2.contactLinks a {
+    text-decoration: none;
+    color: black;
+}

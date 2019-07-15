@@ -17,15 +17,12 @@
 <body>
 
    <nav id="navbar">
-      <a id="navbartext" href="#welcome-section" alt="Home">Home</a>
-
-      <uli id="navbartext"><a href="#BioSection" alt="About Me">About Me</a></uli>
-
-      <uli id="navbartext"><a href="#Projects" alt="Projects">Projects</a></uli>
-
-      <uli id="navbartext"><a href="#WorkExperience" alt="Work Experience">Work Experience</a></uli>
-      <uli id="navbartext"><a href="#Contact" alt="Contact">Contact</a></uli>
-
+      <ul>
+         <li id="navbartext"><a href="#BioSection" alt="About Me">About</a></li>
+     <li id="navbartext"><a href="#Projects" alt="Projects">Projects</a></li>
+      <li id="navbartext"><a href="#WorkExperience" alt="Work Experience">Experience</a></li>
+      <li id="navbartext"><a href="#Contact" alt="Contact">Contact</a></li>
+      </ul>
    </nav>
 
    <section class="welcome-section">
@@ -49,7 +46,7 @@
 
       </div>
    </section>
-   <button id="ProjectsButton">Projects</button>
+   <!-- <button id="ProjectsButton">Projects</button> -->
    <section id="Projects">
       <h2>Web Development Projects</h2>
       <div id="PortPiece1">
@@ -85,10 +82,10 @@
          <a href="https://github.com/tsimpkins73/Technical-Document-Page" id="portfolioLinks"
             alt="Technical Document Page Repo Link" target="_blank">View Project Repo</a>
       </div>
-      <button id="ProjectsCollapseButton">Collapse</button>
+      <!-- <button id="ProjectsCollapseButton">Collapse</button> -->
    </section>
 
-   <button id="WorkExperienceButton">Work Experience</button>
+   <!-- <button id="WorkExperienceButton">Work Experience</button> -->
    <section id="WorkExperience">
       <h2>Work Experience</h2>
       <div id="PortPiece1">
@@ -145,7 +142,7 @@
          </p>
       </div>
       </div>
-      <button id="WorkExperienceCollapseButton">Collapse</button>
+      <!-- <button id="WorkExperienceCollapseButton">Collapse</button> -->
    </section>
 
    <section id="Contact">
@@ -153,7 +150,7 @@
          | <a href="https://github.com/tsimpkins73" alt="My Github Link">Github</a> | <a
             href="https://www.linkedin.com/in/travis-simpkins/" alt="My Linkedin Link">LinkedIn</a></h2>
       <br><br>
-      <form id="ContactForm" action="mailto:t73designs@yahoo.com" method="post" enctype="text/plain">
+      <form id="ContactForm" action="mail.php" method="post" enctype="text/plain">
          <fieldset id="contactFormInfo">
             Or message me here if you'd like...
             <p><label for="firstName">First Name</label>
