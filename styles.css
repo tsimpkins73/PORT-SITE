@@ -31,12 +31,19 @@
     body {
         font-size: 200em
     }
+    
+    #navbar{
+        height: 20px;
+padding: 0;
+margin: auto;
+    }
 
     nav #navbartext,
     #footertext {
         font-size: 15pt;
-        padding: 1%;
+        padding: 0;
         text-align: center;
+        height: 20px;
     }
 }
 
@@ -60,7 +67,16 @@
 
     }
 
+    nav #navbartext,
+    #footertext {
+        font-size: 15pt;
+        padding: 0;
+        text-align: center;
+            }
 
+nav {
+    height: 20px;
+}
 
     body section#WorkExperience {
         width: auto;
@@ -143,16 +159,17 @@
 
     nav#navbar {
         width: auto;
-        height: 2%;
+        height: 20px;
         text-align: center;
         box-shadow: 3px 3px 10px grey;
         z-index: 10;
+        margin: auto;
     }
 
     nav #navbartext,
     #footertext {
         font-size: 15pt;
-        padding: 1%;
+        padding: 0;
         text-align: center;
     }
 
@@ -187,6 +204,8 @@ ul{
      list-style: none;
      display: flex;
      padding: 0;
+     height: auto;
+     margin: auto;
 }
 
 
@@ -215,7 +234,7 @@ label {
     position: sticky;
     top: 0;
     background-color: rgb(0, 87, 91);
-    height: 5vh;
+    height: 30px;
     text-align: center;
     box-shadow: 3px 3px 10px grey;
     z-index: 10;
