@@ -11,13 +11,7 @@
         display: inline-block;
     }
 
-    body button#ProjectsButton,
-    body button#WorkExperienceButton,
-    body button#ProjectsCollapseButton,
-    body button#WorkExperienceCollapseButton {
-        display: none;
-    }
-
+ 
     body section#Projects,
     body section#WorkExperience {
         width: auto;
@@ -136,13 +130,6 @@ nav {
         width: 25%;
         height: 5%;
         display: inline-block;
-    }
-
-    body button#ProjectsButton,
-    body button#WorkExperienceButton,
-    body button#ProjectsCollapseButton,
-    body button#WorkExperienceCollapseButton {
-        display: none;
     }
 
     section#AboutMeImage {
@@ -367,21 +354,6 @@ img {
     text-align: center;
 }
 
-button#ProjectsButton,
-button#WorkExperienceButton {
-    background-color: rgb(0, 87, 91);
-    width: 100vw;
-    box-sizing: 100%;
-    margin: auto;
-    margin-top: 0;
-    height: 3%;
-    padding: 3%;
-    display: none;
-    text-align: center;
-    align-content: center;
-    color: white;
-    font-size: 1.5em;
-}
 
 button#WorkExperienceCollapseButton {
     background-color: rgb(0, 87, 91);
