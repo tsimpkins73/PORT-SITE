@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) and (min-width: 300px) {
+@media only screen and (max-width: 900px) and (min-width: 500px) {
 
     section#Projects #PortPiece1,
     section#WorkExperience #PortPiece1 {
@@ -11,13 +11,7 @@
         display: inline-block;
     }
 
-    body button#ProjectsButton,
-    body button#WorkExperienceButton,
-    body button#ProjectsCollapseButton,
-    body button#WorkExperienceCollapseButton {
-        display: none;
-    }
-
+ 
     body section#Projects,
     body section#WorkExperience {
         width: auto;
@@ -26,6 +20,9 @@
         height: auto;
         display: block;
 
+    }
+    section#AboutMeText {
+        width: 80%;
     }
 
     body {
@@ -45,11 +42,6 @@ margin: auto;
         text-align: center;
         height: 20px;
     }
-
-    section#BioSection {
-        display: inline-block;
-    }
-    
 }
 
 @media only screen and (min-width: 900px) {
@@ -107,6 +99,15 @@ nav {
 
     }
 
+    section#BioSection {
+        background-color: rgba(20, 203, 211, 0.4);
+        width: auto;
+        margin: auto;
+        margin-top: 0;
+        height: auto;
+        padding: 10%;
+        display: block;
+    }
 
     input[type="submit"],
     a#profile-link,
@@ -131,32 +132,23 @@ nav {
         display: inline-block;
     }
 
-    body button#ProjectsButton,
-    body button#WorkExperienceButton,
-    body button#ProjectsCollapseButton,
-    body button#WorkExperienceCollapseButton {
-        display: none;
-    }
-
-    #AboutMeImage {
+    section#AboutMeImage {
         margin: auto;
         padding: 10px;
+        max-width: 53%;
+        max-height: 40%;
         display: inline-block;
-
+font-size: 100%;
     }
 
     #AboutMeText {
-        margin: 0;
-        margin-right: 0;
+        margin: auto;
+        margin-right: 3%;
         padding: 10px;
+        max-width: 40%;
+        max-height: 40%;
         display: inline;
         font-size: 1em;
-
-    }
-
-
-    #AboutMeText-para {
- width:100%;
 
     }
 
@@ -194,28 +186,14 @@ nav {
 
 /* CSS BELOW */
 
-#BioSection {
-    background-color: rgba(20, 203, 211, 0.4);
-    width: auto;
-    margin: auto;
-    margin-top: 0;
-    height: auto;
-    padding: 10%;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
+/* * {
+     outline: 1px solid red;
+ } */
 
 p {
     line-height: 1.2;
 
 }
-
-
-
-#AboutMeText-para {
-    width:100%;
-   
-       }
 
 ul{
      list-style: none;
@@ -331,8 +309,8 @@ li {
     background-position: center;
     height: auto;
     padding: 10%;
-display: grid;
-grid-template-columns: 1fr 2fr;
+    text-align: center;
+
 }
 
 #AboutMeImage {
@@ -345,9 +323,8 @@ grid-template-columns: 1fr 2fr;
 
 .myPic {
     border: 2px solid white;
-    width: 100%;
-height: auto;
-object-fit: cover;
+    width: 75%;
+    max-height: 40%;
 }
 
 img {
@@ -361,7 +338,8 @@ img {
     width: 100%;
     display: inline-block;
     text-overflow: clip;
-    font-size: 1.5em;
+    font-size: 125%;
+    text-align: justify;
 }
 
 
@@ -376,21 +354,6 @@ img {
     text-align: center;
 }
 
-button#ProjectsButton,
-button#WorkExperienceButton {
-    background-color: rgb(0, 87, 91);
-    width: 100vw;
-    box-sizing: 100%;
-    margin: auto;
-    margin-top: 0;
-    height: 3%;
-    padding: 3%;
-    display: none;
-    text-align: center;
-    align-content: center;
-    color: white;
-    font-size: 1.5em;
-}
 
 button#WorkExperienceCollapseButton {
     background-color: rgb(0, 87, 91);
