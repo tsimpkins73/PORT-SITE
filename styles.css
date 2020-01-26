@@ -351,6 +351,7 @@ text-align: center;
 
 img {
     border: 2px solid white;
+    height: auto;
 }
 
 #AboutMeText {
