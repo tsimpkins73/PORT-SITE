@@ -131,7 +131,7 @@ nav {
         font-size: 10pt;
         font-family: helvetica;
         width: 25%;
-        height: 5%;
+        height: auto;
         display: inline-block;
     }
 
