@@ -33,7 +33,7 @@
     div#projects-container{
         display: block;
     }
-    a#portfolioLinks {
+    a.portfolioLinks {
         width: auto;
     }
 
@@ -158,7 +158,7 @@ nav {
 
     input[type="submit"],
     a#profile-link,
-    a#portfolioLinks {
+    a.portfolioLinks {
         background-color: rgb(247, 114, 0);
         color: #FFFFFF;
         padding: 25px;
@@ -493,7 +493,7 @@ fieldset {
 
 
 input[type="submit"],
-#portfolioLinks {
+.portfolioLinks {
     width: 242px;
     margin: 3%;
     font-size: 16px;
@@ -501,7 +501,7 @@ input[type="submit"],
 
 input[type="submit"],
 a#profile-link,
-a#portfolioLinks {
+a.portfolioLinks {
     text-decoration: none;
     color: white;
     background-color: rgb(247, 114, 0);
