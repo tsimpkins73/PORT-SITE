@@ -81,7 +81,7 @@ margin: auto;
     }
     div p {
         line-height: 1.;
-        font-size: 1em;
+        font-size: 1.5em;
     }
     
 }
@@ -356,6 +356,8 @@ body {
 
 .workResp {
     text-align: left;
+    line-height: 1.5;
+    font-size: 1.5em;
 }
 
 li {
