@@ -1,7 +1,7 @@
 @media only screen and (max-width: 900px) and (min-width: 300px) {
 
-    section#Projects #PortPiece1,
-    section#WorkExperience #PortPiece1 {
+    section#Projects .PortPiece1,
+    section#WorkExperience .PortPiece1 {
         margin: auto;
         padding: 2%;
         font-size: 15pt;
@@ -41,7 +41,7 @@ padding: 0;
 margin: auto;
     }
 
-    nav #navbartext,
+    nav .navbartext,
     #footertext {
         font-size: 15pt;
         padding: 0;
@@ -80,7 +80,7 @@ margin: auto;
 
     }
 
-    nav #navbartext,
+    nav .navbartext,
     #footertext {
         font-size: 15pt;
         padding: 0;
@@ -99,7 +99,7 @@ nav {
         display: block;
     }
 
-    section#Projects #PortPiece1 {
+    section#Projects .PortPiece1 {
         margin: auto;
         margin-top: 0;
         padding: 2%;
@@ -125,7 +125,7 @@ nav {
         width: auto;
     }
 
-    section#WorkExperience #PortPiece1 {
+    section#WorkExperience .PortPiece1 {
         margin: 0px 1%;
         padding: 2%;
         font-size: 10pt;
@@ -167,7 +167,7 @@ text-align: center;
         margin: auto;
     }
 
-    nav #navbartext,
+    nav .navbartext,
     #footertext {
         font-size: 15pt;
         padding: 0;
@@ -258,7 +258,7 @@ label {
     font-size: .6em;
 }
 
-#navbartext {
+.navbartext {
     color: #FFFFFF;
     text-decoration: none;
     margin: auto;
@@ -473,7 +473,7 @@ input[type="text"] {
 }
 
 
-#PortPiece1 {
+.PortPiece1 {
     margin: 0px auto;
     margin-top: 0;
     padding: 2%;
