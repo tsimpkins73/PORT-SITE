@@ -1,14 +1,29 @@
-@media only screen and (max-width: 900px) and (min-width: 300px) {
+@media only screen and (max-width: 900px) and (min-width: 200px) {
 
     section#Projects .PortPiece1,
     section#WorkExperience .PortPiece1 {
         margin: auto;
         padding: 2%;
-        font-size: 15pt;
+        font-size: .5em;
         font-family: helvetica;
-        width: 100%;
+        width: 95%;
         height: auto;
         display: inline-block;
+    }
+
+    footer#footertext {
+        font-size: .75em;
+        padding: 0;
+        text-align: center;
+        height: 20px;
+        width: auto;
+        display: block;
+    }
+
+    h2.contactLinks a {
+        text-decoration: none;
+        color: black;
+        font-size: .75em;
     }
 
     h1#HeaderText {
@@ -18,6 +33,18 @@
     div#projects-container{
         display: block;
     }
+    a.portfolioLinks {
+        width: auto;
+    }
+
+   #navbar ul{
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1.5em;
+        height: auto;
+        margin: auto;
+        padding: 5px;
+        }
     
 
 
@@ -35,8 +62,8 @@
         font-size: 200em
     }
     
-    #navbar{
-        height: 20px;
+    nav#navbar{
+        height: 70px;
 padding: 0;
 margin: auto;
     }
@@ -52,7 +79,24 @@ margin: auto;
     section#BioSection {
         display: inline-block;
     }
+    div p {
+        line-height: 1.;
+        font-size: 1.5em;
+    }
     
+}
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+#navbar ul {
+    display: flex;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+div p {
+    line-height: 1.25;
+    font-size: 1.5em;
+}
 }
 
 @media only screen and (min-width: 900px) {
@@ -114,8 +158,8 @@ nav {
 
     input[type="submit"],
     a#profile-link,
-    a#portfolioLinks {
-        background-color: rgb(247, 114, 0);
+    a.portfolioLinks {
+        background-color: rgb(185, 87, 2);
         color: #FFFFFF;
         padding: 25px;
         margin: 2%;
@@ -155,7 +199,7 @@ text-align: center;
 
     #AboutMeText-para {
  width:100%;
-
+ font-size: 1em;
     }
 
     nav#navbar {
@@ -204,15 +248,15 @@ text-align: center;
 }
 
 p {
-    line-height: 1.2;
-
+    line-height: 1.25;
+    font-size: 1.5em;
 }
 
 
 
 #AboutMeText-para {
     width:100%;
-   
+   font-size: 1em;
        }
 
 ul{
@@ -312,6 +356,8 @@ body {
 
 .workResp {
     text-align: left;
+    line-height: 1.5;
+    font-size: 1.5em;
 }
 
 li {
@@ -406,7 +452,7 @@ button {
 }
 
 #WorkExperience {
-    background-color: rgba(247, 114, 0);
+    background-color: rgb(185, 87, 2);
     width: auto;
     box-sizing: 100%;
     margin: auto;
@@ -449,7 +495,7 @@ fieldset {
 
 
 input[type="submit"],
-#portfolioLinks {
+.portfolioLinks {
     width: 242px;
     margin: 3%;
     font-size: 16px;
@@ -457,11 +503,11 @@ input[type="submit"],
 
 input[type="submit"],
 a#profile-link,
-a#portfolioLinks {
+a.portfolioLinks {
     text-decoration: none;
     color: white;
-    background-color: rgb(247, 114, 0);
-    padding: 3% 10%;
+    background-color: rgb(185, 87, 2);
+    padding: 10px;
     display: inline-block;
     box-shadow: 1px 1px 2px black;
     font-size: 16pt;
@@ -471,7 +517,10 @@ input[type="text"] {
     width: 100%;
     height: 40px;
 }
-
+ img.project-pic{
+     width: 75%;
+     height: 75%;
+ }
 
 .PortPiece1 {
     margin: 0px auto;
