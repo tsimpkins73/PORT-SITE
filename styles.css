@@ -206,8 +206,7 @@ text-align: center;
         width: auto;
         height: 10px;
         text-align: center;
-        box-shadow: 3px 3px 10px grey;
-        z-index: 10;
+             z-index: 10;
         margin: auto;
     }
 
@@ -237,7 +236,7 @@ text-align: center;
 /* CSS BELOW */
 
 #BioSection {
-    background-color: rgb(0, 242, 255);
+    background-color: #FFFFFF;
     width: auto;
     margin: auto;
     margin-top: 0;
@@ -265,6 +264,8 @@ ul{
      padding: 0;
      height: auto;
      margin: auto;
+     width: 100%;
+}
 }
 
 
@@ -293,17 +294,16 @@ label {
     padding: 2%;
     position: sticky;
     top: 0;
-    background-color: rgb(0, 87, 91);
+    background-color: rgb(0, 87, 91, 0);
     height: 30px;
     text-align: center;
-    box-shadow: 3px 3px 10px grey;
     z-index: 10;
     display: block;
     font-size: .6em;
 }
 
 .navbartext {
-    color: #FFFFFF;
+    color:  rgb(0, 87, 91);
     text-decoration: none;
     margin: auto;
     position: relative;
@@ -327,7 +327,7 @@ label {
 }
 
 nav a {
-    color: white;
+    color:  rgb(0, 87, 91);
     text-decoration: none;
     font-family: Helvetica;
 }
@@ -345,7 +345,7 @@ body {
     padding: 1%;
     background-image: linear-gradient( rgba(124, 242, 248, 0.5), rgba(124, 242, 248, 1)), url(https://images.pexels.com/photos/249798/pexels-photo-249798.png);
     background-size: cover;
-    background-color: rgba(20, 203, 211, 0.5);
+    background-color: #FFFFFF;
     background-repeat: no-repeat;
     background-position: center;
     height: 40vh;
@@ -367,7 +367,7 @@ li {
 
 
 #BioSection {
-    background-color: rgb(124, 242, 248);
+    background-color: #FFFFFF;
     margin: 0;
     margin-top: 0;
     background-size: cover;
@@ -430,7 +430,7 @@ button {
 
 
 #Projects {
-    background-color: rgb(0, 87, 91);
+    background-color: #FFFFFF;
     width: auto;
     margin: auto;
     margin-top: 0;
