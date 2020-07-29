@@ -9,7 +9,7 @@ export default class AboutMe extends React.Component {
   return (
     <section id="BioSection">
     <div id="AboutMeImage">
-       <img class="myPic"  src="https://github.com/tsimpkins73/PORT-SITE/blob/master/images/travisHeadshot.jpg?raw=true" alt="Travis' Headshot" />
+       <img class="myPic"  src="https://github.com/tsimpkins73/PORT-SITE/blob/master/images/travisHeadshot_BW Artistic.png?raw=true" alt="Travis' Headshot" />
     </div>
     <div id="AboutMeText">
        <h2>Hi, I'm Travis</h2>
