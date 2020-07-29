@@ -15,10 +15,12 @@ export default class App extends React.Component {
                 <AboutMe isActive={this.state.isAboutMeActive}/>
                 <Projects isActive={this.state.isProjectsActive}/>
                 <WorkHistory isActive={this.state.isWorkHistoryActive}/>
-                <Contact isActive={this.state.isContactActive}/>            
+                <Contact isActive={this.state.isContactActive}/>    
+                <footer>
+      <p id="footertext">Designed and Coded by Travis Simpkins • <a
+            href="mailto:t73designs@yahoo.com" target="_blank">t73designs@yahoo.com</a></p>
+   </footer>   
     </div>
   );
   }
 }
-
-export default App;
