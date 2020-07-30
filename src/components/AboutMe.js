@@ -1,17 +1,13 @@
 'use strict';
 import React from 'react';
-import './css/index.css'
-import './css/StartPage.css'
+import '../css/index.css'
 
 export default class AboutMe extends React.Component {
   
   render(){
   return (
-    <section id="BioSection">
-    <div id="AboutMeImage">
-       <img class="myPic"  src="https://github.com/tsimpkins73/PORT-SITE/blob/master/images/travisHeadshot_BW Artistic.png?raw=true" alt="Travis' Headshot" />
-    </div>
-    <div id="AboutMeText">
+    <section className={(this.props.isActive) ? 'BioSection' : 'hidden'}>
+        <div id="AboutMeText">
        <h2>Hi, I'm Travis</h2>
        <p id="AboutMeText-para">I truly enjoy building and creating new things. Whether it’s building Lego creations
           with my children, drawing, painting, or anything else, I love the process of making something new. That
@@ -26,9 +22,11 @@ export default class AboutMe extends React.Component {
           my Github here.</a>
 
     </div>
+    <div id="AboutMeImage">
+       <img class="myPic"  src="https://raw.githubusercontent.com/tsimpkins73/PORT-SITE/react-changeover-branch/images/travisHeadshot_BW%20Artistic.png" alt="Travis' Headshot" />
+    </div>
  </section>
   );
   }
 }
 
-export default AboutMe;

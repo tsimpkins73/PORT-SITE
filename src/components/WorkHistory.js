@@ -1,13 +1,12 @@
 'use strict';
 import React from 'react';
-import './css/index.css'
-import './css/StartPage.css'
+import '../css/index.css'
 
 export default class WorkHistory extends React.Component {
   
   render(){
   return (
-    <section id="WorkExperience">
+<section  className={(this.props.isActive) ? 'WorkExperience' : 'hidden'}>
     <h2>Work Experience</h2>
     <section class="PortPiece1">
        <h2>Graphics & Pre-Press Coordinator</h2>
@@ -66,9 +65,7 @@ export default class WorkHistory extends React.Component {
     </section>
  </section>
 
- </section>
    );
   }
 }
 
-export default WorkHistory;
