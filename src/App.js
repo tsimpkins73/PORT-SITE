@@ -59,7 +59,46 @@ export default class App extends React.Component {
   }
 };
 
-        
+
+aboutMeButton = () => {
+
+  this.setState({
+    isAboutMeActive: true,
+    isProjectsActive: false,
+    isWorkHistoryActive: false,
+    isContactActive: false,
+  })
+};
+
+projectsButton = () => {
+
+  this.setState({
+    isAboutMeActive: false,
+    isProjectsActive: true,
+    isWorkHistoryActive: false,
+    isContactActive: false,
+  })
+};
+
+workHistoryButton = () => {
+
+  this.setState({
+    isAboutMeActive: false,
+    isProjectsActive: false,
+    isWorkHistoryActive: true,
+    isContactActive: false,
+  })
+};
+
+contactButton = () => {
+
+  this.setState({
+    isAboutMeActive: false,
+    isProjectsActive: false,
+    isWorkHistoryActive: false,
+    isContactActive: true,
+  })
+};      
 
 
 render() {
@@ -67,10 +106,10 @@ render() {
     <div class="container" >
       <nav id="navbar">
       <ul id="navList">
-         <li class="navbartext"><a href="#BioSection">About</a></li>
-         <li class="navbartext"><a href="#Projects">Projects</a></li>
-         <li class="navbartext"><a href="#WorkExperience">Experience</a></li>
-         <li class="navbartext"><a href="#Contact">Contact</a></li>
+         <li class="navbartext"><a onClick={() => this.aboutMeButton()} >About</a></li>
+         <li class="navbartext"><a onClick={() => this.projectsButton()}>Projects</a></li>
+         <li class="navbartext"><a onClick={() => this.workHistoryButton()}>Experience</a></li>
+         <li class="navbartext"><a onClick={() => this.contactButton()}>Contact</a></li>
       </ul>
    </nav>
     <AboutMe isActive={this.state.isAboutMeActive} /> 

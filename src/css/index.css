@@ -26,26 +26,29 @@
         font-size: .75em;
     }
 
+
+    
     h1#HeaderText {
         font-size: 2em;
     }
 
-    div#projects-container{
+    div#projects-container {
         display: block;
     }
+
     a.portfolioLinks {
         width: auto;
     }
 
-   #navbar ul{
+    #navbar ul {
         display: inline-grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 1.5em;
         height: auto;
         margin: auto;
         padding: 5px;
-        }
-    
+    }
+
 
 
     body section#Projects,
@@ -61,11 +64,11 @@
     body {
         font-size: 200em
     }
-    
-    nav#navbar{
+
+    nav#navbar {
         height: 70px;
-padding: 0;
-margin: auto;
+        padding: 0;
+        margin: auto;
     }
 
     nav .navbartext,
@@ -79,24 +82,26 @@ margin: auto;
     section.BioSection {
         display: inline-block;
     }
+
     div p {
         line-height: 1.;
         font-size: 1.5em;
     }
-    
-}
-@media only screen and (min-width: 500px) and (max-width: 900px) {
-#navbar ul {
-    display: flex;
-    height: auto;
-    margin: auto;
-    padding: 5px;
+
 }
 
-div p {
-    line-height: 1.25;
-    font-size: 1.5em;
-}
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    #navbar ul {
+        display: flex;
+        height: auto;
+        margin: auto;
+        padding: 5px;
+    }
+
+    div p {
+        line-height: 1.25;
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -111,8 +116,8 @@ div p {
 
     ul#navList {
         margin: -7px;
-   }
-   
+    }
+
 
     body div#Port {
         width: 90%;
@@ -129,11 +134,11 @@ div p {
         font-size: 15pt;
         padding: 0;
         text-align: center;
-            }
+    }
 
-nav {
-    height: 20px;
-}
+    nav {
+        height: 20px;
+    }
 
     body section#WorkExperience {
         width: auto;
@@ -184,7 +189,7 @@ nav {
         margin: auto;
         padding: 10px;
         display: inline-block;
-text-align: center;
+        text-align: center;
     }
 
     #AboutMeText {
@@ -198,16 +203,16 @@ text-align: center;
 
 
     #AboutMeText-para {
- width:95%;
- text-align: justify;
- font-size: 1em;
+        width: 95%;
+        text-align: justify;
+        font-size: 1em;
     }
 
     nav#navbar {
         width: auto;
         height: 10px;
         text-align: center;
-             z-index: 10;
+        z-index: 10;
         margin: auto;
     }
 
@@ -253,20 +258,134 @@ p {
 }
 
 
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+
+  
+
+
+
+.Projects{
+    margin: auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.carousel{
+    width: 90%;
+    display: grid;
+    grid-template-columns: .25fr 1fr .25fr;
+    margin: auto;
+    align-items: center
+}
+
+.image-slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr auto auto .25fr;
+    grid-gap: 1px 1px;
+    gap: 1px 1px;
+    grid-template-areas:
+        "projectTitle projectTitle projectTitle projectTitle"
+        ". project-image project-image ."
+        "projectDescription projectDescription projectDescription projectDescription"
+        ". projectButtons projectButtons .";
+    font-size: small;
+    width: 100%;
+    margin: auto;
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+.projectTitle {
+    grid-area: projectTitle;
+font-size: 2em;
+}
+
+.project-image {
+    grid-area: project-image;
+    width: 100%;
+}
+
+.projectDescription {
+    grid-area: projectDescription;
+font-size: 50%;
+text-align: justify;
+}
+
+.projectButtons {
+    grid-area: projectButtons;
+}
+
+
 
 #AboutMeText-para {
-    width:95%;
+    width: 95%;
     text-align: justify;
-   font-size: 1em;
-       }
+    font-size: 1em;
+}
 
-ul{
-     list-style: none;
-     display: flex;
-     padding: 0;
-     height: auto;
-     margin: auto;
-     width: 100%;
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    height: auto;
+    margin: auto;
+    width: 100%;
 }
 
 
@@ -305,7 +424,7 @@ label {
 }
 
 .navbartext {
-    color:  rgb(0, 87, 91);
+    color: rgb(0, 87, 91);
     text-decoration: none;
     margin: auto;
     position: relative;
@@ -329,7 +448,7 @@ label {
 }
 
 nav a {
-    color:  rgb(0, 87, 91);
+    color: rgb(0, 87, 91);
     text-decoration: none;
     font-family: Helvetica;
 }
@@ -345,7 +464,7 @@ body {
 .welcome-section {
     margin: 0;
     padding: 1%;
-    background-image: linear-gradient( rgba(124, 242, 248, 0.5), rgba(124, 242, 248, 1)), url(https://images.pexels.com/photos/249798/pexels-photo-249798.png);
+    background-image: linear-gradient(rgba(124, 242, 248, 0.5), rgba(124, 242, 248, 1)), url(https://images.pexels.com/photos/249798/pexels-photo-249798.png);
     background-size: cover;
     background-color: #FFFFFF;
     background-repeat: no-repeat;
@@ -380,8 +499,8 @@ li {
     background-position: center;
     height: auto;
     padding: 20px;
-display: grid;
-grid-template-columns: 1fr 2fr;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 #AboutMeImage {
@@ -395,9 +514,9 @@ grid-template-columns: 1fr 2fr;
 .myPic {
     border: 2px solid white;
     width: 100%;
-height: auto;
-object-fit: cover;
-text-align: center;
+    height: auto;
+    object-fit: cover;
+    text-align: center;
 }
 
 img {
@@ -448,7 +567,7 @@ button {
 
 }
 
-#projects-container{
+#projects-container {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 1.5em;
@@ -456,7 +575,7 @@ button {
 }
 
 #WorkExperience {
-   width: auto;
+    width: auto;
     box-sizing: 100%;
     margin: auto;
     margin-top: 0;
@@ -465,7 +584,7 @@ button {
     display: block;
     text-align: center;
     align-content: center;
-  font-size: 1.5em;
+    font-size: 1.5em;
 
 }
 
@@ -519,10 +638,11 @@ input[type="text"] {
     width: 100%;
     height: 40px;
 }
- img.project-pic{
-     width: 75%;
-     height: 75%;
- }
+
+img.project-pic {
+    width: 75%;
+    height: 75%;
+}
 
 .PortPiece1 {
     margin: 0px auto;
