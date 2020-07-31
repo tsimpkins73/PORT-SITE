@@ -109,7 +109,9 @@ render() {
          <li class="navbartext"><a onClick={() => this.aboutMeButton()} >About</a></li>
          <li class="navbartext"><a onClick={() => this.projectsButton()}>Projects</a></li>
          <li class="navbartext"><a onClick={() => this.workHistoryButton()}>Experience</a></li>
-         <li class="navbartext"><a onClick={() => this.contactButton()}>Contact</a></li>
+         <li class="navbartext"><a href="mailto:t73designs@yahoo.com" target="_blank">t73designs@yahoo.com</a>
+         | <a href="https://github.com/tsimpkins73" target="_blank">Github</a> | <a
+            href="https://www.linkedin.com/in/travis-simpkins/" target="_blank">LinkedIn</a></li>
       </ul>
    </nav>
     <AboutMe isActive={this.state.isAboutMeActive} /> 

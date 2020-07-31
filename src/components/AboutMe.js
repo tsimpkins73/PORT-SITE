@@ -23,8 +23,7 @@ export default class AboutMe extends React.Component {
 
     </div>
     <div id="AboutMeImage">
-       <img class="myPic"  src="https://raw.githubusercontent.com/tsimpkins73/PORT-SITE/react-changeover-branch/images/travisHeadshot_BW%20Artistic.png" alt="Travis' Headshot" />
-    </div>
+       </div>
  </section>
   );
   }
