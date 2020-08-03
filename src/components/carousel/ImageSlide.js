@@ -4,7 +4,7 @@ import '../../css/index.css'
 
 export default class ImageSlide extends React.Component {
   
-
+   
    
   render(){
       const styles = {
