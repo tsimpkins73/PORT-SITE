@@ -319,6 +319,10 @@ div#AboutMeImage{
         display: block;
     }
 
+section.Biosection{
+    height: 87vh;
+}
+
 }
 
 
