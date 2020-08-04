@@ -41,7 +41,7 @@ export default class App extends React.Component {
           repoLink: "https://github.com/tsimpkins73/Flipping-Game",
           liveLink: "https://flipping-wars.vercel.app/",
           description:
-            " <p>A buying and selling game where you buy low and (hopefully) sell high. It is built with HTML5, CSS, JavaScript, & React. </p>",
+            " A buying and selling game where you buy low and (hopefully) sell high. It is built with HTML5, CSS, JavaScript, & React.",
         },
         {
           title: "Marvel Character Search App Project",
@@ -52,7 +52,7 @@ export default class App extends React.Component {
           liveLink:
             "https://tsimpkins73.github.io/Marvel-Character-Search-App/",
           description:
-            "<p>This is a character search app that returns images, storylines and other information about the searched character. The search functionality retrieves information from the Marvel API(https: //developer.marvel.com) & the Movie Database API (https: //developers.themoviedb.org/3). This page was built with HTML5, CSS, Javascript, & Jquery. </p>",
+            "This is a character search app that returns images, storylines and other information about the searched character. The search functionality retrieves information from the Marvel API(https: //developer.marvel.com) & the Movie Database API (https: //developers.themoviedb.org/3). This page was built with HTML5, CSS, Javascript, & Jquery.",
         },
         {
           title: "Marvel Quiz App",
