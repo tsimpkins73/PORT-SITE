@@ -191,7 +191,13 @@ div#AboutMeImage{
 }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 900px){
+    nav.navbar {
+    display: none;
+}
+}
+
+@media only screen and (min-width: 1200px) and (min-height: 900px){
     body section.BioSection{
         height: 85vh;
     }
@@ -224,9 +230,7 @@ div#AboutMeImage{
 
     }
 
-    nav.navbar {
-        display: none;
-    }
+  
 
     ul#navList {
         margin: -7px;
@@ -541,7 +545,6 @@ p {
 
  footer{
      background-color: #FFFFFF;
-     position: absolute;
      bottom: 0;
      margin: auto;
      width: 100%;
