@@ -248,6 +248,7 @@ div#AboutMeImage{
         font-size: 15pt;
         padding: 0;
         text-align: center;
+    
     }
 
     nav {
@@ -538,6 +539,10 @@ p {
     100% {opacity: 0;} 
  } 
 
+ footer{
+     background-color: #FFFFFF;
+ }
+ 
 .projectTitle {
     grid-area: projectTitle;
 font-size: 2em;
