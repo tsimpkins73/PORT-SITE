@@ -21,9 +21,9 @@ export default class ImageSlide extends React.Component {
        </div>
        <div className="projectButtons">
         <a href={project.liveLink} class="portfolioLinks"
-           target="_blank">View Live Project</a>
+           target="_blank" rel="noopener noreferrer">View Live Project</a>
         <a href={project.repoLink} class="portfolioLinks"
-            target="_blank">View Project Repo</a>
+            target="_blank" rel="noopener noreferrer">View Project Repo</a>
           </div>
           </div>
       );

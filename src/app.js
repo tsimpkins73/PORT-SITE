@@ -121,27 +121,27 @@ export default class App extends React.Component {
         <nav className={this.state.mobileNavbarIsActive ? "hidden" : "navbar"}>
           <h2 onClick={this.mobileNavbarReveal}>-</h2>
           <ul id="navList">
-            <li class="navbartext navbartextAbout">
-              <a onClick={() => this.aboutMeButton()}>About</a>
+            <li class="navbartext navbartextAbout" onClick={() => this.aboutMeButton()} >
+              About
             </li>
-            <li class="navbartext navbartextProjects">
-              <a onClick={() => this.projectsButton()}>Projects</a>
+            <li class="navbartext navbartextProjects" onClick={() => this.projectsButton()}>
+              Projects
             </li>
-            <li class="navbartext navbartextExperience">
-              <a onClick={() => this.workHistoryButton()}>Experience</a>
+            <li class="navbartext navbartextExperience" onClick={() => this.workHistoryButton()}>
+              Experience
             </li>
             <li class="navbartext navbartextContact">
-              <a href="mailto:t73designs@yahoo.com" target="_blank">
+              <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
                 t73designs@yahoo.com
               </a>
               |{" "}
-              <a href="https://github.com/tsimpkins73" target="_blank">
+              <a href="https://github.com/tsimpkins73" target="_blank" rel="noopener noreferrer">
                 Github
               </a>{" "}
               |{" "}
               <a
                 href="https://www.linkedin.com/in/travis-simpkins/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 LinkedIn
               </a>
@@ -151,27 +151,27 @@ export default class App extends React.Component {
 
         <nav className="desktop-navbar">
           <ul id="navList">
-            <li class="navbartext">
-              <a onClick={() => this.aboutMeButton()}>About</a>
+          <li class="navbartext" onClick={() => this.aboutMeButton()} >
+              About
+            </li>
+            <li class="navbartext" onClick={() => this.projectsButton()}>
+              Projects
+            </li>
+            <li class="navbartext" onClick={() => this.workHistoryButton()}>
+              Experience
             </li>
             <li class="navbartext">
-              <a onClick={() => this.projectsButton()}>Projects</a>
-            </li>
-            <li class="navbartext">
-              <a onClick={() => this.workHistoryButton()}>Experience</a>
-            </li>
-            <li class="navbartext">
-              <a href="mailto:t73designs@yahoo.com" target="_blank">
+              <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
                 t73designs@yahoo.com
               </a>
               |{" "}
-              <a href="https://github.com/tsimpkins73" target="_blank">
+              <a href="https://github.com/tsimpkins73" target="_blank" rel="noopener noreferrer">
                 Github
               </a>{" "}
               |{" "}
               <a
                 href="https://www.linkedin.com/in/travis-simpkins/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 LinkedIn
               </a>
@@ -188,7 +188,7 @@ export default class App extends React.Component {
           <p id="footertext">
             {" "}
             Designed and Coded by Travis Simpkins•{" "}
-            <a href="mailto:t73designs@yahoo.com" target="_blank">
+            <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
               {" "}
               t73designs @yahoo.com{" "}
             </a>

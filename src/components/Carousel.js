@@ -29,8 +29,7 @@ export default class Carousel extends React.Component {
         }
         
         nextSlide () {
-             const lastIndex = this.state.currentImageIndex - 1;
-             console.log(this.props.projects.length);
+                       console.log(this.props.projects.length);
              const shouldResetIndex = (this.state.currentImageIndex + 1) > (this.props.projects.length-1); 
             const index =  shouldResetIndex ? 0 : this.state.currentImageIndex + 1;
             console.log(index);

@@ -18,7 +18,7 @@ export default class AboutMe extends React.Component {
           Node, & PostgreSQL. Additionally, being the main source for all things IT in the small businesses I’ve
           worked for has given me a dedication to documentation and concise and usable communication. I’m looking
           forward to creating fantastic things with a team of great programmers. </p>
-       <a href="https://github.com/tsimpkins73" id="profile-link" target="_blank">See
+       <a href="https://github.com/tsimpkins73" id="profile-link" target="_blank" rel="noopener noreferrer">See
           my Github here.</a>
 
     </div>
