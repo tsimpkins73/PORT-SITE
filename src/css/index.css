@@ -541,8 +541,12 @@ p {
 
  footer{
      background-color: #FFFFFF;
+     position: absolute;
+     bottom: 0;
+     margin: auto;
+     width: 100%;
  }
- 
+
 .projectTitle {
     grid-area: projectTitle;
 font-size: 2em;
