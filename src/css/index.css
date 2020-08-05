@@ -191,11 +191,30 @@ div#AboutMeImage{
 }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
     body section.BioSection{
-        height: 87vh;
+        height: 85vh;
     }
-    
+    body  div#AboutMeImage {
+        width: 100%;
+        margin: auto;
+        height: 100%;
+        font-size: 1em;
+        background-position: top right;
+        background-size: 78%;
+    }
+
+    p#AboutMeText-para {
+        width: 100%;
+           }
+
+    body  div#AboutMeText {
+        font-size: 1.5em;
+        line-height: 3em;
+        background-position: top right;
+        background-size: 78%;
+    }
+
     body section#Projects {
         width: auto;
         margin: auto;
@@ -267,6 +286,7 @@ div#AboutMeImage{
         font-size: 100%;
         height: 20px;
         width: auto;
+        line-height: 1em;
     }
 
     section.WorkExperience .PortPiece1 {
