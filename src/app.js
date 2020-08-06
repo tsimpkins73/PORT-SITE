@@ -116,7 +116,7 @@ export default class App extends React.Component {
           className={this.state.mobileNavbarIsActive ? "navbar" : "hidden"}
           onClick={this.mobileNavbarReveal}
         >
-          <h2>Menu</h2>
+          <h1 className="menuHeader">Menu</h1>
         </nav>
         <nav className={this.state.mobileNavbarIsActive ? "hidden" : "navbar"}>
           <h2 onClick={this.mobileNavbarReveal}>-</h2>

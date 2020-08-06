@@ -52,7 +52,8 @@
         gap: 1px 1px;
         grid-template-areas: "navbartextAbout navbartextProjects navbartextExperience" "navbartextContact navbartextContact navbartextContact";
         text-align: center;
-      }
+        row-gap: 25%;  
+    }
       
       li.navbartextExperience { grid-area: navbartextExperience; }
       
@@ -100,7 +101,7 @@ div#AboutMeImage{
 
     nav .navbartext,
     #footertext {
-        font-size: 10pt;
+        font-size: 14pt;
         padding: 0;
         text-align: center;
         height: 20px;
@@ -113,13 +114,13 @@ div#AboutMeImage{
     }
 
     div p {
-        line-height: 1.;
+        line-height: 1.75;
         font-size: 1.5em;
     }
 
     div.projectDescription{
-        line-height: 1.25;
-        font-size: 1em;;
+        line-height: 1.5;
+        font-size: 100%;;
     }
 
     div.carousel{
@@ -195,6 +196,42 @@ div#AboutMeImage{
     nav.navbar {
     display: none;
 }
+section.BioSection{
+    height: 78vh;
+}
+body  div#AboutMeImage {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    font-size: 1em;
+    background-position: top right;
+    background-size: 78%;
+}
+
+div.projectDescription{
+    line-height: 1.5;
+    font-size: 100%;;
+}
+
+body section.WorkExperience {
+    width: auto;
+    margin: auto;
+    margin-top: 0;
+    height: auto;
+    display: block;
+}
+
+section.WorkExperience .PortPiece1 {
+    margin: 0px 1%;
+    padding: 2%;
+    font-size: 10pt;
+    font-family: helvetica;
+    width: 25%;
+    height: auto;
+    display: inline-block;
+}
+
+
 }
 
 @media only screen and (min-width: 1200px) and (min-height: 900px){
@@ -259,13 +296,7 @@ div#AboutMeImage{
         height: 20px;
     }
 
-    body section.WorkExperience {
-        width: auto;
-        margin: auto;
-        margin-top: 0;
-        height: auto;
-        display: block;
-    }
+
 
     section#Projects .PortPiece1 {
         margin: auto;
@@ -294,15 +325,6 @@ div#AboutMeImage{
         line-height: 1em;
     }
 
-    section.WorkExperience .PortPiece1 {
-        margin: 0px 1%;
-        padding: 2%;
-        font-size: 10pt;
-        font-family: helvetica;
-        width: 25%;
-        height: auto;
-        display: inline-block;
-    }
 
 
    
@@ -359,8 +381,12 @@ div#AboutMeImage{
 
 
 p {
-    line-height: 1.25;
+    line-height: 1.75;
     font-size: 1.5em;
+}
+
+.menuHeader{
+    font-size: 2em;
 }
 
 
@@ -563,7 +589,7 @@ font-size: 2em;
 .projectDescription {
     grid-area: projectDescription;
 font-size: 50%;
-text-align: justify;
+text-align: center;
 }
 
 .projectButtons {
@@ -700,7 +726,7 @@ li {
     background-position: center;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 #AboutMeImage {
