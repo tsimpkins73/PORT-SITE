@@ -1,5 +1,6 @@
 "use strict";
 import React from "react";
+import { BrowserRouter, Route, Link, withRouter } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import WorkHistory from "./components/WorkHistory";
@@ -112,6 +113,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div class="container">
+            <BrowserRouter>
         <nav
           className={this.state.mobileNavbarIsActive ? "navbar" : "hidden"}
           onClick={this.mobileNavbarReveal}
@@ -121,70 +123,69 @@ export default class App extends React.Component {
         <nav className={this.state.mobileNavbarIsActive ? "hidden" : "navbar"}>
           <h2 onClick={this.mobileNavbarReveal}>-</h2>
           <ul id="navList">
-            <li class="navbartext navbartextAbout" onClick={() => this.aboutMeButton()} >
-              About
-            </li>
-            <li class="navbartext navbartextProjects" onClick={() => this.projectsButton()}>
-              Projects
-            </li>
-            <li class="navbartext navbartextExperience" onClick={() => this.workHistoryButton()}>
-              Experience
-            </li>
-            <li class="navbartext navbartextContact">
-              <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
-                t73designs@yahoo.com
+                      <Link class="navbartext navbartextAbout" to='/' >
+                About
+            </Link>
+              <Link class="navbartext navbartextProjects" to='/projects' >
+                Projects
+            </Link>
+              <Link class="navbartext navbartextExperience" to='/workhistory' >  Experience
+            </Link>
+              <li class="navbartext navbartextContact">
+                <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
+                  t73designs@yahoo.com
               </a>
               |{" "}
-              <a href="https://github.com/tsimpkins73" target="_blank" rel="noopener noreferrer">
-                Github
+                <a href="https://github.com/tsimpkins73" target="_blank" rel="noopener noreferrer">
+                  Github
               </a>{" "}
               |{" "}
-              <a
-                href="https://www.linkedin.com/in/travis-simpkins/"
-                target="_blank" rel="noopener noreferrer"
-              >
-                LinkedIn
+                <a
+                  href="https://www.linkedin.com/in/travis-simpkins/"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  LinkedIn
               </a>
-            </li>
+              </li>
+           
           </ul>
         </nav>
 
         <nav className="desktop-navbar">
           <ul id="navList">
-          <li class="navbartext" onClick={() => this.aboutMeButton()} >
-              About
-            </li>
-            <li class="navbartext" onClick={() => this.projectsButton()}>
-              Projects
-            </li>
-            <li class="navbartext" onClick={() => this.workHistoryButton()}>
-              Experience
-            </li>
-            <li class="navbartext">
-              <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
-                t73designs@yahoo.com
+              <Link class="navbartext" to='/' >About</Link>
+              <Link class="navbartext" to='/projects' >Projects
+            </Link>
+              <Link class="navbartext" to='/workhistory' >
+                Experience
+            </Link>
+              <li class="navbartext">
+                <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
+                  t73designs@yahoo.com
               </a>
               |{" "}
-              <a href="https://github.com/tsimpkins73" target="_blank" rel="noopener noreferrer">
-                Github
+                <a href="https://github.com/tsimpkins73" target="_blank" rel="noopener noreferrer">
+                  Github
               </a>{" "}
               |{" "}
-              <a
-                href="https://www.linkedin.com/in/travis-simpkins/"
-                target="_blank" rel="noopener noreferrer"
-              >
-                LinkedIn
+                <a
+                  href="https://www.linkedin.com/in/travis-simpkins/"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  LinkedIn
               </a>
-            </li>
+              </li>
           </ul>
         </nav>
-        <AboutMe isActive={this.state.isAboutMeActive} />
-        <Projects
-          isActive={this.state.isProjectsActive}
-          projects={this.state.projects}
-        />
-        <WorkHistory isActive={this.state.isWorkHistoryActive} />
-        <footer>
+          <Route exact path={'/'} component={AboutMe} />
+          <Route exact path={'/projects'} render={() => {
+            return <Projects
+              isActive={this.state.isProjectsActive}
+              projects={this.state.projects}
+            />
+          }} />
+          <Route exact path={'/workhistory'} component={WorkHistory} />
+         <footer>
           <p id="footertext">
             {" "}
             Designed and Coded by Travis Simpkins•{" "}
@@ -194,6 +195,7 @@ export default class App extends React.Component {
             </a>
           </p>
         </footer>
+        </BrowserRouter>
       </div>
     );
   }

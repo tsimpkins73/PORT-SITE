@@ -6,7 +6,7 @@ export default class WorkHistory extends React.Component {
   
   render(){
   return (
-<section  className={(this.props.isActive) ? 'WorkExperience' : 'hidden'}>
+<section  className={'WorkExperience'}>
     <h2>Work Experience</h2>
     <section class="PortPiece1">
        <h2>Graphics & Pre-Press Coordinator</h2>

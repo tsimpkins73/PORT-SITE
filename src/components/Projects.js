@@ -7,7 +7,7 @@ export default class Projects extends React.Component {
   
   render(){
   return (
-    <section className={(this.props.isActive) ? 'Projects' : 'hidden'}>
+    <section className={'Projects'}>
     <Carousel projects={this.props.projects} />
  </section>
    );
