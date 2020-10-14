@@ -60,7 +60,7 @@ export default class App extends React.Component {
           img:
             "https://repository-images.githubusercontent.com/193247239/5c9a6380-98e7-11e9-99c1-e985be06553d",
           repoLink:
-            "https://github.com/tsimpkins73/Web-Dev-Toolkit-Clienthttps://github.com/tsimpkins73/Quiz-App",
+            "https://github.com/tsimpkins73/Quiz-App",
           liveLink: "https://tsimpkins73.github.io/Quiz-App//",
           description:
             "This is a functional quiz app built with HTML5, CSS, Javascript, & Jquery.",
