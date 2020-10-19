@@ -6,8 +6,8 @@ import '../css/index.css'
 export default class ProjectPreview extends React.Component {
   
     openProjectModal = (project) => {
-        
-         this.props. openProjectModal = (project);
+      console.log(project);
+         this.props.openProjectModal(project);
        };
 
   render(){
@@ -15,19 +15,18 @@ export default class ProjectPreview extends React.Component {
     
     let project =this.props.project;
   return (
-    
-    <section className="ProjectPreview">
+        <section className="ProjectPreview">
              <div class="PortPiece1">
-            <h2>project.name}</h2>
-            <img class="project-pic" src={project.image} alt={project.name} ></img>
+            <h2>{project.title}</h2>
+            <img class="project-pic" src={project.img} alt={project.title} ></img>
             <p>{project.summary}
             </p>
-            <button className= 'openProject' onClick={() =>this.openProjectModal(this.project)} name="buy" value="Buy">Buy</button>
+            <button className= 'portfolioLinks' onClick={() =>this.openProjectModal(project)} name="open" value="View More">View More</button>
 
-            <a href="https://web-dev-toolkit-client.now.sh/" class="portfolioLinks"
+           {/*  <a href={project.liveLink} class="portfolioLinks"
                target="_blank">View Live Project</a>
-            <a href="https://github.com/tsimpkins73/Web-Dev-Toolkit-Client" class="portfolioLinks"
-                target="_blank">View Project Repo</a>
+            <a href={project.repoLink} class="portfolioLinks"
+                target="_blank">View Project Repo</a> */}
          </div>
  </section>
    );

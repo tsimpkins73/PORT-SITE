@@ -2,6 +2,7 @@
 import React from "react";
 import { BrowserRouter, Route, Link, withRouter } from "react-router-dom";
 import AboutMe from "./components/AboutMe";
+import ProjectModal from "./components/ProjectModal";
 import Projects from "./components/Projects";
 import WorkHistory from "./components/WorkHistory";
 import "./css/index.css";
@@ -13,9 +14,11 @@ export default class App extends React.Component {
     this.state = {
       isAboutMeActive: true,
       isProjectsActive: false,
+      isProjectModalActive: false,
       isWorkHistoryActive: false,
       isContactActive: false,
       mobileNavbarIsActive: true,
+      projectToView:{},
       projects: [
         {
           title: "Web Dev Toolkit App",
@@ -23,6 +26,8 @@ export default class App extends React.Component {
             "https://github.com/tsimpkins73/PORT-SITE/blob/master/images/WDTK-Dashboard-SC.png?raw=true",
           repoLink: "https://github.com/tsimpkins73/Web-Dev-Toolkit-Client",
           liveLink: "https://web-dev-toolkit-client.now.sh/",
+          summary:
+            "Web Dev Toolkit is an aggregated resource hub. This app makes it easy for Web Developers to find learning and working resources in one location.",
           description:
             "Web Dev Toolkit is an aggregated resource hub. This app makes it easy for Web Developers to find learning and working resources in one location. The resources are grouped together based upon their type; Tutorials, Course, Videos, and Utilities. This app allows authorized users to visit a variety of web development resources, save favorite resources, and search through resources to find specific content. Web Dev Toolkit client was built using React and vanilla HTML & CSS.It utilizes React - Router and other functions to navigate through content choices and manipulation.The custom Web Dev Toolkit API was built using Node, PostgreSQL, knex, and Express.It also utilizes chai & Mocha as testing methods, and JWT for authentication.",
         },
@@ -32,6 +37,8 @@ export default class App extends React.Component {
             "https://github.com/tsimpkins73/PORT-SITE/blob/master/images/theConsole-Dashboard-SC.png?raw=true",
           repoLink: "https://github.com/tsimpkins73/theConsole",
           liveLink: "https://theconsole-thankful-cassowary.now.sh/",
+          summary:
+            "theConsole is a blog dedicated to republishing articles useful to and centered around web development.",
           description:
             "theConsole is a blog dedicated to republishing articles useful to and centered around web development. This app allows authorized users to read articles, save favorite articles, and comment on articles.The user can also search for articles or peruse articles based on their category. theConsole client was built using React and vanilla HTML & CSS.It utilizes React - Router and other functions to navigate through content choices and manipulation.The custom theConsole API was built using Node, PostgreSQL, knex, and Express.It also utilizes chai & Mocha as testing methods.",
         },
@@ -41,6 +48,8 @@ export default class App extends React.Component {
             "https://raw.githubusercontent.com/tsimpkins73/PORT-SITE/master/images/FlippingAppScreenshot.png",
           repoLink: "https://github.com/tsimpkins73/Flipping-Game",
           liveLink: "https://flipping-wars.vercel.app/",
+          summary:
+            " A buying and selling game where you buy low and (hopefully) sell high. It is built with HTML5, CSS, JavaScript, & React.",
           description:
             " A buying and selling game where you buy low and (hopefully) sell high. It is built with HTML5, CSS, JavaScript, & React.",
         },
@@ -52,6 +61,8 @@ export default class App extends React.Component {
             "https://github.com/tsimpkins73/Marvel-Character-Search-App",
           liveLink:
             "https://tsimpkins73.github.io/Marvel-Character-Search-App/",
+            summary:
+            "This is a character search app that returns images, storylines and other information about the searched character.",
           description:
             "This is a character search app that returns images, storylines and other information about the searched character. The search functionality retrieves information from the Marvel API(https: //developer.marvel.com) & the Movie Database API (https: //developers.themoviedb.org/3). This page was built with HTML5, CSS, Javascript, & Jquery.",
         },
@@ -62,6 +73,8 @@ export default class App extends React.Component {
           repoLink:
             "https://github.com/tsimpkins73/Quiz-App",
           liveLink: "https://tsimpkins73.github.io/Quiz-App//",
+          summary:
+            "This is a functional quiz app abotu Marvel comics characters.",
           description:
             "This is a functional quiz app built with HTML5, CSS, Javascript, & Jquery.",
         },
@@ -109,6 +122,17 @@ export default class App extends React.Component {
     event.preventDefault();
     this.setState({ mobileNavbarIsActive: !this.state.mobileNavbarIsActive });
   };
+
+  openProjectModal = (project) => {
+this.setState({
+   projectToView: project,
+   isProjectModalActive: true,
+   isGameViewBlurred: true,
+   upDateGameview: false
+});
+console.log(project);
+console.log(this.state.projectToView);
+};
 
   render() {
     return (
@@ -181,7 +205,10 @@ export default class App extends React.Component {
           <Route exact path={'/projects'} render={() => {
             return <Projects
               isActive={this.state.isProjectsActive}
+              isProjectModalActive={this.state.isProjectModalActive}
               projects={this.state.projects}
+              projectToView ={this.state.projectToView}
+              openProjectModal={this.openProjectModal}
             />
           }} />
           <Route exact path={'/workhistory'} component={WorkHistory} />
