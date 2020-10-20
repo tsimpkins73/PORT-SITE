@@ -16,7 +16,7 @@ export default class ProjectModal extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         this.setState({
-            item: nextProps.projectToView,
+          projectToView: nextProps.projectToView,
                     });
          }
 
@@ -25,22 +25,29 @@ export default class ProjectModal extends React.Component {
          this.props. openProjectModal = (project);
        };
 
+       closeButton = () => {
+        console.log('Close');
+        this.props.closeButton();
+    };
+
   render(){
 
     
     let projectToView = this.state.projectToView;
     console.log(projectToView);
   return (
-    <section className={(this.props.isActive) ? 'itemInfo' : 'hidden'}> 
+    <section className={(this.props.isActive) ? 'projectModal' : 'hidden'}> 
              <div class="PortPiece1">
             <h2>{projectToView.title}</h2>
-            <img class="project-pic" src={projectToView.img} alt={projectToView.title} ></img>
+            <img class="modalProject-pic" src={projectToView.img} alt={projectToView.title} ></img>
             <p>{projectToView.description}
             </p>
             <a href={projectToView.liveLink} class="portfolioLinks"
                target="_blank">View Live Project</a>
             <a href={projectToView.repoLink} class="portfolioLinks"
-                target="_blank">View Project Repo</a> */}
+                target="_blank">View Project Repo</a> 
+                <button className="portfolioLinks" id="close" name="close" onClick={() => this.closeButton()} value="close">Close</button>
+                    
          </div>
  </section>
    );

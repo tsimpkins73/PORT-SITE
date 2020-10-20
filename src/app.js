@@ -14,6 +14,7 @@ export default class App extends React.Component {
     this.state = {
       isAboutMeActive: true,
       isProjectsActive: false,
+      isProjectsBlurred: false,
       isProjectModalActive: false,
       isWorkHistoryActive: false,
       isContactActive: false,
@@ -118,6 +119,14 @@ export default class App extends React.Component {
     });
   };
 
+  closeButton = () => {
+
+    this.setState({
+      isProjectModalActive: false,
+      isProjectsBlurred: false
+    })
+};
+
   mobileNavbarReveal = (event) => {
     event.preventDefault();
     this.setState({ mobileNavbarIsActive: !this.state.mobileNavbarIsActive });
@@ -127,7 +136,7 @@ export default class App extends React.Component {
 this.setState({
    projectToView: project,
    isProjectModalActive: true,
-   isGameViewBlurred: true,
+   isProjectsBlurred: true,
    upDateGameview: false
 });
 console.log(project);
@@ -205,10 +214,12 @@ console.log(this.state.projectToView);
           <Route exact path={'/projects'} render={() => {
             return <Projects
               isActive={this.state.isProjectsActive}
+              isProjectsBlurred={this.state.isProjectsBlurred}
               isProjectModalActive={this.state.isProjectModalActive}
               projects={this.state.projects}
               projectToView ={this.state.projectToView}
               openProjectModal={this.openProjectModal}
+              closeButton={this.closeButton}
             />
           }} />
           <Route exact path={'/workhistory'} component={WorkHistory} />

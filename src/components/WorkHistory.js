@@ -7,8 +7,8 @@ export default class WorkHistory extends React.Component {
   render(){
   return (
 <section  className={'WorkExperience'}>
-    <h2>Work Experience</h2>
-    <section class="PortPiece1">
+    <h2 className="WEHeadline">Work Experience</h2>
+    <section class="workExperienceBlock">
        <h2>Graphics & Pre-Press Coordinator</h2>
        <h3>Minuteman Press of Town N’ Country</h3>
        <h4>January 2011-Current</h4>
@@ -29,7 +29,7 @@ export default class WorkHistory extends React.Component {
           • Oversaw production revenue growth in all years while maintaining department size and costs.<br></br>
        </div>
     </section>
-    <section class="PortPiece1">
+    <section class="workExperienceBlock">
        <h2>Graphic Designer & Pre-Press Coordinator</h2>
        <h3>Adco Printing</h3>
        <h4>April 2008 – December 2010</h4>
@@ -47,7 +47,7 @@ export default class WorkHistory extends React.Component {
           <br></br>
           </div>
      </section>
-    <section class="PortPiece1">
+    <section class="workExperienceBlock">
        <h2>Graphic Designer</h2>
        <h3>Dunndeal Publications</h3>
        <h4>July 2004 - December 2007</h4>
