@@ -210,7 +210,18 @@ console.log(this.state.projectToView);
               </li>
           </ul>
         </nav>
-          <Route exact path={'/'} component={AboutMe} />
+        <AboutMe />
+        <Projects
+              isActive={this.state.isProjectsActive}
+              isProjectsBlurred={this.state.isProjectsBlurred}
+              isProjectModalActive={this.state.isProjectModalActive}
+              projects={this.state.projects}
+              projectToView ={this.state.projectToView}
+              openProjectModal={this.openProjectModal}
+              closeButton={this.closeButton}
+               />
+               <WorkHistory />
+          {/* <Route exact path={'/'} component={AboutMe} />
           <Route exact path={'/projects'} render={() => {
             return <Projects
               isActive={this.state.isProjectsActive}
@@ -222,7 +233,7 @@ console.log(this.state.projectToView);
               closeButton={this.closeButton}
             />
           }} />
-          <Route exact path={'/workhistory'} component={WorkHistory} />
+          <Route exact path={'/workhistory'} component={WorkHistory} /> */}
          <footer>
           <p id="footertext">
             {" "}

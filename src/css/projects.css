@@ -2,7 +2,7 @@
 
     
 div.projectPreviews {
-    position: absolute;
+    /* position: absolute; */
     width: auto;
     display: inline-grid;
     text-align: center;
@@ -27,14 +27,14 @@ div.projectPreviewContainer {
 }
 
 .Projects {
-
     width: auto;
     margin: auto;
-    margin-top: 0;
+    margin-top: -16%;
     height: auto;
-    padding: 3%;
-display: flex;
-    position: absolute;
+    padding: 20% 3% 10%;
+    display: block;
+    z-index: 3;
+    background-color: greenyellow;
 }
 
 .ProjectsBlurred {
@@ -44,7 +44,7 @@ display: flex;
     grid-template-columns: 1fr 1fr 1fr;
     z-index: -1;
     filter: blur(1.5rem);
-    position: absolute;
+    /* position: absolute; */
 }
 
 
@@ -95,7 +95,7 @@ img.project-pic {
 
 .projectPreviews {
     color: white;
-    position: absolute;
+    /* position: absolute; */
     width: auto;
     display: block;
     text-align: center;
