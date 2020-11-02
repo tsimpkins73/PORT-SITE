@@ -233,7 +233,7 @@ console.log(this.state.projectToView);
               closeButton={this.closeButton}
             />
           }} />
-          <Route exact path={'/workhistory'} component={WorkHistory} /> */}
+          <Route exact path={'/workhistory'} component={WorkHistory} /> 
          <footer>
           <p id="footertext">
             {" "}
@@ -243,7 +243,7 @@ console.log(this.state.projectToView);
               t73designs @yahoo.com{" "}
             </a>
           </p>
-        </footer>
+        </footer>*/}
         </BrowserRouter>
       </div>
     );
