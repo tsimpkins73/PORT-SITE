@@ -6,7 +6,7 @@ export default class AboutMe extends React.Component {
   
   render(){
   return (
-    <section className={'BioSection'}>
+    <section className={'BioSection'} id="section1">
         <div id="AboutMeText">
        <h2>Hi, I'm Travis</h2>
        <p id="AboutMeText-para">I truly enjoy building and creating new things. Whether it’s building Lego creations

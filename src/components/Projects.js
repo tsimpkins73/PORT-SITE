@@ -12,7 +12,7 @@ export default class Projects extends React.Component {
 
     let openProjectModal = this.props.openProjectModal;
       return (
-            <section className='Projects' id="view1" >
+            <section className='Projects' id="section2" >
                <h2 className="WEHeadline">Projects</h2>
               <div className={(this.props.isProjectsBlurred ? 'ProjectsBlurred' : 'projectPreviews')}>
       {this.props.projects.map(function (project) {

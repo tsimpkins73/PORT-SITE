@@ -34,6 +34,7 @@
  
     h1#HeaderText {
         font-size: 2em;
+        margin-top: 50%;
     }
 
     div#projects-container {
@@ -64,12 +65,12 @@
     text-align: center; }
 
 div#AboutMeText{
-    width: auto;
+    width: 82%;
     margin: auto;
-    font-size: 1em;
-    padding: 3%;
+    font-size: 3vw;
+    padding: 5%;
     z-index: 5;
-    background-color: none;
+      border-radius: 9%;
 }
 
 div#AboutMeImage{
@@ -113,9 +114,10 @@ div#AboutMeImage{
     section.BioSection {
         display: inline-block;
         width: auto;
-        margin-top: -35%;
-        padding: 40% 0 0%;
+        margin-top: -5%;
+        padding: 12% 0 0%;
         height: 80%;
+        border-radius: 0%;;
           }
 
     div p {
@@ -297,6 +299,13 @@ section.WorkExperience .PortPiece1 {
 @media only screen and (min-width: 900px){
     body section.BioSection{
         height: auto;
+    }
+
+    p#AboutMeText-para {
+        width: 95%;
+        text-align: justify;
+        font-size: 1em;
+        padding: 0%;
     }
 
     section.WorkExperience {
@@ -713,7 +722,8 @@ text-align: center;
 #AboutMeText-para {
     width: 95%;
     text-align: justify;
-    font-size: 1em;
+    font-size: 5vw;
+    padding: 5%;
 }
 
 ul {
@@ -806,7 +816,7 @@ body {
     background-color: #FFFFFF;
     background-repeat: no-repeat;
     background-position: center;
-    height: 40vh;
+    height: 88vh;
     text-align: center;
     font-size: 1.5em;
     color: rgb(255, 175, 106);
@@ -828,19 +838,16 @@ li {
 }
 
 .BioSection {
-    text-overflow: clip;
     background-color: cadetblue;
     width: auto;
-    z-index: 0;
-    /* margin-bottom: -73px; */
     position: relative;
     margin: 0;
-    margin-top: -8%;
-    padding: 15% 1% 6%;
+    margin-top: -4%;
+    padding: 4% 1% 10%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 0% 0% 50% 50% / 10% 10% 0% 40% ;
+    border-radius: 0% 0% 50% 50% / 10% 10% 0% 40%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;

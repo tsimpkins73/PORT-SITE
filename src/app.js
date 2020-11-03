@@ -146,6 +146,9 @@ console.log(this.state.projectToView);
   render() {
     return (
       <div class="container">
+         <section class="welcome-section">
+      <h1 id="HeaderText">Travis Simpkins' Portfolio</h1>
+   </section>
             <BrowserRouter>
         <nav
           className={this.state.mobileNavbarIsActive ? "navbar" : "hidden"}
@@ -154,16 +157,16 @@ console.log(this.state.projectToView);
           <h1 className="menuHeader">Menu</h1>
         </nav>
         <nav className={this.state.mobileNavbarIsActive ? "hidden" : "navbar"}>
-          <h2 onClick={this.mobileNavbarReveal}>-</h2>
+          <h2 className="menuHeader" onClick={this.mobileNavbarReveal}>-</h2>
           <ul id="navList">
-                      <Link class="navbartext navbartextAbout" to='/' >
+                      <a class="navbartext navbartextAbout" href='#section1' >
                 About
-            </Link>
-              <Link class="navbartext navbartextProjects" to='/projects' >
+            </a>
+              <a class="navbartext navbartextProjects" href='#section2'  >
                 Projects
-            </Link>
-              <Link class="navbartext navbartextExperience" to='/workhistory' >  Experience
-            </Link>
+            </a>
+              <a class="navbartext navbartextExperience" href='#section3'  >  Experience
+            </a>
               <li class="navbartext navbartextContact">
                 <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
                   t73designs@yahoo.com
@@ -186,12 +189,12 @@ console.log(this.state.projectToView);
 
         <nav className="desktop-navbar">
           <ul id="navList">
-              <Link class="navbartext" to='/' >About</Link>
-              <Link class="navbartext" to='/projects' >Projects
-            </Link>
-              <Link class="navbartext" to='/workhistory' >
+              <a class="navbartext" href='#section1' >About</a>
+              <a class="navbartext" href='#section2' >Projects
+            </a>
+              <a class="navbartext" href='#section3' >
                 Experience
-            </Link>
+            </a>
               <li class="navbartext">
                 <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
                   t73designs@yahoo.com
@@ -221,29 +224,6 @@ console.log(this.state.projectToView);
               closeButton={this.closeButton}
                />
                <WorkHistory />
-          {/* <Route exact path={'/'} component={AboutMe} />
-          <Route exact path={'/projects'} render={() => {
-            return <Projects
-              isActive={this.state.isProjectsActive}
-              isProjectsBlurred={this.state.isProjectsBlurred}
-              isProjectModalActive={this.state.isProjectModalActive}
-              projects={this.state.projects}
-              projectToView ={this.state.projectToView}
-              openProjectModal={this.openProjectModal}
-              closeButton={this.closeButton}
-            />
-          }} />
-          <Route exact path={'/workhistory'} component={WorkHistory} /> 
-         <footer>
-          <p id="footertext">
-            {" "}
-            Designed and Coded by Travis Simpkins•{" "}
-            <a href="mailto:t73designs@yahoo.com" target="_blank" rel="noopener noreferrer">
-              {" "}
-              t73designs @yahoo.com{" "}
-            </a>
-          </p>
-        </footer>*/}
         </BrowserRouter>
       </div>
     );

@@ -6,7 +6,7 @@ export default class WorkHistory extends React.Component {
   
   render(){
   return (
-<section  className={'WorkExperience'}>
+<section  className={'WorkExperience'} id="section3" >
     <h2 className="WEHeadline">Work Experience</h2>
     <section class="workExperienceBlock">
        <h2>Graphics & Pre-Press Coordinator</h2>
