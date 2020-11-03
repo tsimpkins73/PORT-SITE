@@ -213,7 +213,7 @@ div#AboutMeImage{
         margin: auto;
         font-size: 1em;
         background-position: top right;
-        background-size: 100%;
+        background-size: contain;
     }
 }
 
@@ -240,7 +240,7 @@ body  div#AboutMeImage {
     height: 100%;
     font-size: 1em;
     background-position: top right;
-    background-size: 100%;
+    background-size: contain;
 }
 
 div.projectDescription{
@@ -279,7 +279,7 @@ section.WorkExperience .PortPiece1 {
         height: 100%;
         font-size: 1em;
         background-position: top right;
-        background-size: 100%;
+        background-size: contain;
     }
 
     p#AboutMeText-para {
@@ -346,7 +346,7 @@ div#AboutMeImage {
         margin: auto;
           font-size: 1em;
         background-position: top right;
-        background-size: 100%;
+        background-size: contain;
     }
 
     p#AboutMeText-para {
@@ -840,15 +840,14 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 101%/21% 12%;
+    border-radius: 0% 0% 50% 50% / 10% 10% 0% 40% ;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 #AboutMeImage {
-    background: url("https://raw.githubusercontent.com/tsimpkins73/PORT-SITE/react-changeover-branch/images/travisHeadshot_BW%20Artistic.png");
-    opacity: 0.75;
+    background: url("https://raw.githubusercontent.com/tsimpkins73/PORT-SITE/master/images/travisHeadshot_BW%20Artistic_h.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -859,7 +858,6 @@ li {
     display: inline-block;
     justify-content: center;
     font-size: .75em;
-    clip-path: inset(10px 20px 30px 40px);
     -webkit-animation: slide-in-right 1s both;
             animation: slide-in-right 1s both;
 }
@@ -891,7 +889,7 @@ img {
     animation: slide-in-left 1s both;
     z-index: 0;
     font-size: 1em;
-    border-radius: 35px;
+    border-radius: 0% 0% 49% 50% / 10% 10% 40% 40%  ;
     background-color: teal;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.19);
     color: white;
